@@ -32,13 +32,17 @@ DEBUG = env_bool("DEBUG", "True")
 
 ALLOWED_HOSTS = [
     h.strip()
-    for h in os.environ.get("ALLOWED_HOSTS", "localhost,127.0.0.1,0.0.0.0").split(",")
+    for h in os.environ.get(
+        "ALLOWED_HOSTS", "localhost,127.0.0.1,0.0.0.0,51.21.221.172"
+    ).split(",")
     if h.strip()
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     o.strip()
-    for o in os.environ.get("CSRF_TRUSTED_ORIGINS", "").split(",")
+    for o in os.environ.get(
+        "CSRF_TRUSTED_ORIGINS", "http://51.21.221.172"
+    ).split(",")
     if o.strip()
 ]
 
