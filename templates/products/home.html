@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}E-Shop — Boutique de chaussures Homme &amp; Femme{% endblock %}
+
+{% block content %}
+<!-- ===================== HERO ===================== -->
+<section class="hero fade-up mb-5">
+    <div class="row align-items-center g-4 position-relative" style="z-index:1;">
+        <div class="col-lg-7">
+            <span class="hero-pill mb-3"><i class="bi bi-stars"></i> Recommandations propulsées par l'IA</span>
+            <h1 class="mb-3">La chaussure qui<br><span style="color:#fde047;">vous correspond</span></h1>
+            <p class="lead mb-4">
+                Sneakers, talons, mocassins, chaussures de sport et de ville.
+                Une sélection Homme &amp; Femme avec des suggestions intelligentes
+                basées sur la similarité de vos modèles préférés.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+                <a href="{% url 'products:product_list' %}?gender=Men" class="btn btn-light-glass btn-lg">
+                    <i class="bi bi-gender-male"></i> Chaussures Homme
+                </a>
+                <a href="{% url 'products:product_list' %}?gender=Women" class="btn btn-light btn-lg text-brand fw-bold">
+                    <i class="bi bi-gender-female"></i> Chaussures Femme
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-5 text-center">
+            <img src="{{ MEDIA_URL }}pngwing.com.png" alt="Chaussures E-Shop"
+                 class="hero-img img-fluid">
+        </div>
+    </div>
+</section>
+
+<!-- ===================== AVANTAGES ===================== -->
+<section class="row g-4 mb-5">
+    <div class="col-md-3 col-6">
+        <div class="d-flex align-items-center gap-3">
+            <div class="feature-icon"><i class="bi bi-truck"></i></div>
+            <div><strong class="d-block">Livraison rapide</strong><small class="text-muted">Partout au Maroc</small></div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6">
+        <div class="d-flex align-items-center gap-3">
+            <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+            <div><strong class="d-block">Paiement sécurisé</strong><small class="text-muted">100% protégé</small></div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6">
+        <div class="d-flex align-items-center gap-3">
+            <div class="feature-icon"><i class="bi bi-arrow-repeat"></i></div>
+            <div><strong class="d-block">Retour facile</strong><small class="text-muted">Sous 14 jours</small></div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6">
+        <div class="d-flex align-items-center gap-3">
+            <div class="feature-icon"><i class="bi bi-headset"></i></div>
+            <div><strong class="d-block">Support 7j/7</strong><small class="text-muted">À votre écoute</small></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== CATEGORIES ===================== -->
+<section class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="section-title mb-0">Types de chaussures</h3>
+        <a href="{% url 'products:product_list' %}" class="btn btn-sm btn-outline-primary">Tout voir</a>
+    </div>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+        {% for category in categories %}
+        <div class="col">
+            <a href="{{ category.get_absolute_url }}" class="category-tile h-100">
+                <div class="tile-icon mb-2">
+                    <i class="bi {{ category.icon }}"></i>
+                </div>
+                <div class="fw-semibold small">{{ category.label }}</div>
+                <small class="text-muted">{{ category.n }} modèle{{ category.n|pluralize }}</small>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- ===================== CHAUSSURES HOMME ===================== -->
+<section class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="section-title mb-0"><i class="bi bi-gender-male text-brand"></i> Chaussures Homme</h3>
+        <a href="{% url 'products:product_list' %}?gender=Men" class="btn btn-sm btn-outline-primary">Voir tout</a>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+        {% for product in men_products %}
+            {% include "products/_product_card.html" %}
+        {% empty %}
+        <p class="text-muted">Aucun modèle homme disponible.</p>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- ===================== CHAUSSURES FEMME ===================== -->
+<section class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="section-title mb-0"><i class="bi bi-gender-female text-brand"></i> Chaussures Femme</h3>
+        <a href="{% url 'products:product_list' %}?gender=Women" class="btn btn-sm btn-outline-primary">Voir tout</a>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+        {% for product in women_products %}
+            {% include "products/_product_card.html" %}
+        {% empty %}
+        <p class="text-muted">Aucun modèle femme disponible.</p>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="hero text-center fade-up" style="padding:3rem 1.5rem;">
+    <div class="position-relative" style="z-index:1;">
+        <h2 class="mb-3">Trouvez chaussure à votre pied 👟</h2>
+        <p class="lead mb-4">Parcourez le catalogue et laissez l'IA vous suggérer les meilleurs modèles.</p>
+        <a href="{% url 'products:product_list' %}" class="btn btn-light btn-lg text-brand fw-bold">
+            <i class="bi bi-bag-check"></i> Découvrir la collection
+        </a>
+    </div>
+</section>
+{% endblock %}

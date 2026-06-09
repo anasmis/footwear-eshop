@@ -1,0 +1,365 @@
+/* ===========================================================
+   E-Shop Django — Thème moderne & vibrant
+   =========================================================== */
+
+:root {
+    --brand-1: #6d28d9;   /* violet */
+    --brand-2: #8b5cf6;   /* violet clair */
+    --brand-3: #ec4899;   /* rose */
+    --accent: #f59e0b;    /* ambre */
+    --ink: #1e1b2e;
+    --muted: #6b7280;
+    --bg: #f6f5fb;
+    --gradient: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 45%, #ec4899 100%);
+    --gradient-soft: linear-gradient(135deg, #ede9fe 0%, #fce7f3 100%);
+    --shadow-sm: 0 2px 8px rgba(109, 40, 217, 0.08);
+    --shadow: 0 10px 30px rgba(109, 40, 217, 0.12);
+    --shadow-lg: 0 20px 45px rgba(109, 40, 217, 0.18);
+    --bs-primary: #6d28d9;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg);
+    color: var(--ink);
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+/* ---------- Navbar ---------- */
+.navbar.app-nav {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    box-shadow: var(--shadow-sm);
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.navbar.app-nav .navbar-brand {
+    font-size: 1.4rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar.app-nav .nav-link {
+    color: var(--ink) !important;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0.4rem 0.85rem !important;
+    transition: all 0.2s ease;
+}
+
+.navbar.app-nav .nav-link:hover {
+    color: var(--brand-1) !important;
+    background: var(--gradient-soft);
+}
+
+.navbar.app-nav .form-control {
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+}
+
+/* ---------- Boutons ---------- */
+.btn {
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 0.55rem 1.25rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.btn-primary,
+.btn-brand {
+    background: var(--gradient);
+    border: none;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.35);
+}
+
+.btn-primary:hover,
+.btn-brand:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    color: #fff;
+    box-shadow: 0 12px 26px rgba(139, 92, 246, 0.45);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--brand-2);
+    color: var(--brand-1);
+}
+
+.btn-outline-primary:hover {
+    background: var(--gradient);
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+.btn-light-glass {
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    backdrop-filter: blur(6px);
+}
+
+.btn-light-glass:hover {
+    background: #fff;
+    color: var(--brand-1);
+    transform: translateY(-2px);
+}
+
+/* ---------- Cartes ---------- */
+.card {
+    border: none;
+    border-radius: 18px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.product-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.product-card img,
+.product-thumb {
+    height: 210px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.06);
+}
+
+.no-image {
+    height: 210px;
+    background: var(--gradient-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-2);
+    font-size: 2.8rem;
+}
+
+.price-tag {
+    font-weight: 800;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- Badges ---------- */
+.badge {
+    border-radius: 999px;
+    font-weight: 600;
+    padding: 0.4em 0.8em;
+}
+
+.badge.cat-badge {
+    background: var(--gradient-soft);
+    color: var(--brand-1);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    position: relative;
+    border-radius: 28px;
+    background: var(--gradient);
+    color: #fff;
+    padding: 4.5rem 2.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.hero::before {
+    width: 320px;
+    height: 320px;
+    top: -120px;
+    right: -80px;
+}
+
+.hero::after {
+    width: 220px;
+    height: 220px;
+    bottom: -110px;
+    left: -60px;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.05;
+}
+
+.hero .lead {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.15rem;
+}
+
+.hero .hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.hero-card {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 22px;
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+}
+
+.hero-img {
+    max-height: 360px;
+    filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.35));
+    animation: floatY 4s ease-in-out infinite;
+}
+
+@keyframes floatY {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+}
+
+/* ---------- Sections ---------- */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 48px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--gradient);
+}
+
+.feature-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    font-size: 1.6rem;
+    color: #fff;
+    background: var(--gradient);
+    box-shadow: var(--shadow);
+}
+
+.category-tile {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-tile:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+    color: var(--brand-1);
+}
+
+.category-tile .tile-icon {
+    font-size: 2rem;
+    color: var(--brand-2);
+}
+
+/* ---------- Stat / dashboard ---------- */
+.stat-card {
+    border-radius: 18px;
+    color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.stat-card .stat-icon {
+    font-size: 1.8rem;
+    opacity: 0.85;
+}
+
+.bg-grad-1 { background: linear-gradient(135deg, #6d28d9, #8b5cf6); }
+.bg-grad-2 { background: linear-gradient(135deg, #059669, #34d399); }
+.bg-grad-3 { background: linear-gradient(135deg, #d97706, #fbbf24); }
+.bg-grad-4 { background: linear-gradient(135deg, #db2777, #f472b6); }
+
+/* ---------- Rating ---------- */
+.rating-stars {
+    color: var(--accent);
+}
+
+/* ---------- Footer ---------- */
+.app-footer {
+    background: var(--ink);
+    color: #cbd5e1;
+}
+
+.app-footer .brand-glow {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* ---------- Forms ---------- */
+.form-control, .form-select {
+    border-radius: 12px;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid #e5e7eb;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--brand-2);
+    box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.18);
+}
+
+.auth-card {
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+}
+
+/* ---------- Utilitaires ---------- */
+.text-brand { color: var(--brand-1) !important; }
+.fade-up { animation: fadeUp 0.5s ease both; }
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+}

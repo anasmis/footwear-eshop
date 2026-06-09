@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Mon profil - E-Shop Django{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h4 class="mb-4"><i class="bi bi-person-circle"></i> Mon profil</h4>
+        <form method="post">
+            {% csrf_token %}
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-white fw-bold">Informations personnelles</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Prénom</label>
+                            {{ user_form.first_name }}
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Nom</label>
+                            {{ user_form.last_name }}
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">E-mail</label>
+                        {{ user_form.email }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-white fw-bold">Coordonnées de livraison</div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Téléphone</label>
+                        {{ profile_form.phone }}
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Adresse</label>
+                        {{ profile_form.address }}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Ville</label>
+                            {{ profile_form.city }}
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Code postal</label>
+                            {{ profile_form.postal_code }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

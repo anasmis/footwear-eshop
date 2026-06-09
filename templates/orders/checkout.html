@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Validation de commande - E-Shop Django{% endblock %}
+
+{% block content %}
+<h4 class="mb-4"><i class="bi bi-bag-check"></i> Finaliser la commande</h4>
+<div class="row">
+    <div class="col-lg-7">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white fw-bold">Informations de livraison</div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label class="form-label">Nom complet</label>
+                        {{ form.full_name }}
+                        {% for e in form.full_name.errors %}<div class="text-danger small">{{ e }}</div>{% endfor %}
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Adresse</label>
+                        {{ form.address }}
+                        {% for e in form.address.errors %}<div class="text-danger small">{{ e }}</div>{% endfor %}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Ville</label>
+                            {{ form.city }}
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Code postal</label>
+                            {{ form.postal_code }}
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Téléphone</label>
+                        {{ form.phone }}
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">
+                        <i class="bi bi-check-circle"></i> Confirmer la commande
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-5 mt-4 mt-lg-0">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white fw-bold">Votre commande</div>
+            <ul class="list-group list-group-flush">
+                {% for item in items %}
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>{{ item.product.name }} <small class="text-muted">x{{ item.quantity }}</small></span>
+                    <span>{{ item.subtotal }} MAD</span>
+                </li>
+                {% endfor %}
+                <li class="list-group-item d-flex justify-content-between fw-bold fs-5">
+                    <span>Total</span><span class="text-primary">{{ cart.total }} MAD</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

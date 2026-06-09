@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block title %}{{ product.name }} - E-Shop Django{% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'products:product_list' %}">Catalogue</a></li>
+        <li class="breadcrumb-item"><a href="{{ product.category.get_absolute_url }}">{{ product.category.name }}</a></li>
+        <li class="breadcrumb-item active">{{ product.name }}</li>
+    </ol>
+</nav>
+
+<div class="row g-4">
+    <div class="col-md-5">
+        <div class="card shadow-sm">
+            {% if product.display_image %}
+            <img src="{{ product.display_image }}" class="card-img-top" alt="{{ product.name }}" style="height:420px;object-fit:cover;">
+            {% else %}
+            <div class="no-image" style="height:350px;"><i class="bi bi-image"></i></div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="col-md-7">
+        <span class="badge bg-secondary mb-2">{{ product.category.name }}</span>
+        <h2>{{ product.name }}</h2>
+        <div class="rating-stars mb-2">
+            {% with rating=product.average_rating %}
+            {% for i in "12345" %}
+                {% if forloop.counter <= rating %}<i class="bi bi-star-fill"></i>{% else %}<i class="bi bi-star"></i>{% endif %}
+            {% endfor %}
+            <span class="text-muted">{{ product.average_rating }} / 5 ({{ product.review_count }} avis)</span>
+            {% endwith %}
+        </div>
+        <h3 class="text-primary my-3">{{ product.price }} MAD</h3>
+        <p>{{ product.description|linebreaks }}</p>
+
+        <ul class="list-unstyled small text-muted">
+            {% if product.gender %}<li><i class="bi bi-person"></i> Genre : {{ product.get_gender_display }}</li>{% endif %}
+            <li><i class="bi bi-box-seam"></i> Stock : {{ product.stock }} unité(s)</li>
+            <li><i class="bi bi-calendar3"></i> Ajouté le {{ product.created_at|date:"d/m/Y" }}</li>
+        </ul>
+
+        {% if product.in_stock %}
+            {% if user.is_authenticated %}
+            <form method="post" action="{% url 'cart:add_to_cart' product.id %}" class="d-flex gap-2 align-items-end mt-3">
+                {% csrf_token %}
+                <div>
+                    <label class="form-label small mb-1">Quantité</label>
+                    <input type="number" name="quantity" value="1" min="1" max="{{ product.stock }}"
+                           class="form-control" style="width:90px;">
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-cart-plus"></i> Ajouter au panier
+                </button>
+            </form>
+            {% else %}
+            <a href="{% url 'accounts:login' %}?next={{ request.path }}" class="btn btn-primary mt-3">
+                <i class="bi bi-box-arrow-in-right"></i> Connectez-vous pour acheter
+            </a>
+            {% endif %}
+        {% else %}
+        <div class="alert alert-danger mt-3"><i class="bi bi-x-circle"></i> Produit en rupture de stock</div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Recommandations IA (TF-IDF + similarité cosinus) -->
+{% if related %}
+<hr class="my-5">
+<div class="d-flex align-items-center gap-2 mb-3">
+    <span class="feature-icon" style="width:42px;height:42px;font-size:1.1rem;"><i class="bi bi-stars"></i></span>
+    <div>
+        <h4 class="section-title mb-0">Vous aimerez aussi</h4>
+        <small class="text-muted">Suggestions intelligentes basées sur la similarité des produits</small>
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+    {% for product in related %}
+        {% include "products/_product_card.html" %}
+    {% endfor %}
+</div>
+{% endif %}
+
+<!-- Avis clients -->
+<hr class="my-5">
+<div class="row">
+    <div class="col-lg-7">
+        <h4 class="mb-3">Avis clients ({{ product.review_count }})</h4>
+        {% for review in reviews %}
+        <div class="card mb-2 shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <strong>{{ review.user.username }}</strong>
+                    <span class="rating-stars">
+                        {% for i in "12345" %}
+                            {% if forloop.counter <= review.rating %}<i class="bi bi-star-fill"></i>{% else %}<i class="bi bi-star"></i>{% endif %}
+                        {% endfor %}
+                    </span>
+                </div>
+                <small class="text-muted">{{ review.created_at|date:"d/m/Y" }}</small>
+                {% if review.comment %}<p class="mb-0 mt-2">{{ review.comment }}</p>{% endif %}
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-muted">Aucun avis pour le moment. Soyez le premier !</p>
+        {% endfor %}
+    </div>
+
+    <div class="col-lg-5">
+        {% if user.is_authenticated %}
+        <div class="card shadow-sm">
+            <div class="card-header bg-white fw-bold">
+                {% if user_review %}Modifier votre avis{% else %}Laisser un avis{% endif %}
+            </div>
+            <div class="card-body">
+                <form method="post" action="{% url 'products:add_review' product.slug %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label class="form-label">Note</label>
+                        {{ review_form.rating }}
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Commentaire</label>
+                        {{ review_form.comment }}
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                </form>
+            </div>
+        </div>
+        {% else %}
+        <div class="alert alert-light border">
+            <a href="{% url 'accounts:login' %}">Connectez-vous</a> pour laisser un avis.
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

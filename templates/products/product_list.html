@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Catalogue - E-Shop{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Sidebar filtres -->
+    <aside class="col-lg-3 mb-4">
+        <!-- Genre -->
+        <div class="card shadow-sm mb-3">
+            <div class="card-header bg-white fw-bold"><i class="bi bi-person"></i> Genre</div>
+            <div class="list-group list-group-flush">
+                <a href="?{% if current_category %}category={{ current_category.slug }}{% endif %}"
+                   class="list-group-item list-group-item-action {% if not gender %}active{% endif %}">
+                    Tous
+                </a>
+                <a href="?gender=Men{% if current_category %}&category={{ current_category.slug }}{% endif %}"
+                   class="list-group-item list-group-item-action {% if gender == 'Men' %}active{% endif %}">
+                    <i class="bi bi-gender-male"></i> Homme
+                </a>
+                <a href="?gender=Women{% if current_category %}&category={{ current_category.slug }}{% endif %}"
+                   class="list-group-item list-group-item-action {% if gender == 'Women' %}active{% endif %}">
+                    <i class="bi bi-gender-female"></i> Femme
+                </a>
+            </div>
+        </div>
+        <!-- Catégories -->
+        <div class="card shadow-sm">
+            <div class="card-header bg-white fw-bold"><i class="bi bi-funnel"></i> Types</div>
+            <div class="list-group list-group-flush">
+                <a href="?{% if gender %}gender={{ gender }}{% endif %}"
+                   class="list-group-item list-group-item-action {% if not current_category %}active{% endif %}">
+                    Tous les types
+                </a>
+                {% for category in categories %}
+                <a href="?category={{ category.slug }}{% if gender %}&gender={{ gender }}{% endif %}"
+                   class="list-group-item list-group-item-action {% if current_category.slug == category.slug %}active{% endif %}">
+                    {{ category.name }}
+                    <span class="badge bg-light text-dark float-end">{{ category.products.count }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </aside>
+
+    <!-- Liste produits -->
+    <div class="col-lg-9">
+        <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+            <h4 class="mb-0">
+                {% if gender == 'Men' %}Homme &mdash; {% elif gender == 'Women' %}Femme &mdash; {% endif %}
+                {% if current_category %}{{ current_category.name }}
+                {% elif query %}Résultats pour « {{ query }} »
+                {% else %}Toutes les chaussures{% endif %}
+                <small class="text-muted">({{ page_obj.paginator.count }})</small>
+            </h4>
+            <form method="get" class="d-flex align-items-center gap-2">
+                {% if query %}<input type="hidden" name="q" value="{{ query }}">{% endif %}
+                {% if current_category %}<input type="hidden" name="category" value="{{ current_category.slug }}">{% endif %}
+                {% if gender %}<input type="hidden" name="gender" value="{{ gender }}">{% endif %}
+                <label class="text-muted small mb-0">Trier&nbsp;:</label>
+                <select name="sort" class="form-select form-select-sm" onchange="this.form.submit()">
+                    <option value="newest" {% if sort == 'newest' or not sort %}selected{% endif %}>Plus récents</option>
+                    <option value="oldest" {% if sort == 'oldest' %}selected{% endif %}>Plus anciens</option>
+                    <option value="price_asc" {% if sort == 'price_asc' %}selected{% endif %}>Prix croissant</option>
+                    <option value="price_desc" {% if sort == 'price_desc' %}selected{% endif %}>Prix décroissant</option>
+                    <option value="name" {% if sort == 'name' %}selected{% endif %}>Nom (A-Z)</option>
+                </select>
+            </form>
+        </div>
+
+        {% if products %}
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            {% for product in products %}
+                {% include "products/_product_card.html" %}
+            {% endfor %}
+        </div>
+
+        {% if page_obj.paginator.num_pages > 1 %}
+        <nav class="mt-4">
+            <ul class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?{% if query %}q={{ query }}&{% endif %}{% if current_category %}category={{ current_category.slug }}&{% endif %}{% if gender %}gender={{ gender }}&{% endif %}{% if sort %}sort={{ sort }}&{% endif %}page={{ page_obj.previous_page_number }}">Précédent</a>
+                </li>
+                {% endif %}
+                <li class="page-item disabled">
+                    <span class="page-link">Page {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}</span>
+                </li>
+                {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?{% if query %}q={{ query }}&{% endif %}{% if current_category %}category={{ current_category.slug }}&{% endif %}{% if gender %}gender={{ gender }}&{% endif %}{% if sort %}sort={{ sort }}&{% endif %}page={{ page_obj.next_page_number }}">Suivant</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+
+        {% else %}
+        <div class="alert alert-info text-center py-5">
+            <i class="bi bi-inbox fs-1 d-block mb-2"></i>
+            Aucun produit ne correspond à votre recherche.
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

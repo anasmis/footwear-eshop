@@ -1,0 +1,4734 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$BLXWFKyfbaz9IjKZYdFxpp$9m+GSmgL7eoiqLC9M4h9XyntNf0lDFLsJk7oQsLJGCE=",
+    "last_login": "2026-06-02T14:41:43.914Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@eshop.local",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-06-02T12:43:54.240Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$pvoJI0fAflbqmtmUXdcsGL$WUIbXGa1h0/hlO87sZiUaPq4cNbEZSJjYwqIi5L7Tg0=",
+    "last_login": "2026-06-02T12:48:09.323Z",
+    "is_superuser": false,
+    "username": "testclient",
+    "first_name": "",
+    "last_name": "",
+    "email": "t@t.co",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-02T12:47:53.548Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$GiHg92s9qWwxx52KGTOcpE$BpckPdkcLopmJvHMeCNABQaxB1FUqRmHdLViDd7quiU=",
+    "last_login": "2026-06-02T14:10:43.031Z",
+    "is_superuser": false,
+    "username": "anas.ait.ali.04@gmail.com",
+    "first_name": "Anas",
+    "last_name": "AIT ALI",
+    "email": "anas.ait.ali.04@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-02T12:49:28.488Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.profile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "phone": "",
+    "address": "",
+    "city": "",
+    "postal_code": "",
+    "created_at": "2026-06-02T12:43:54.557Z"
+  }
+},
+{
+  "model": "accounts.profile",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "testclient"
+    ],
+    "phone": "",
+    "address": "",
+    "city": "",
+    "postal_code": "",
+    "created_at": "2026-06-02T12:47:53.551Z"
+  }
+},
+{
+  "model": "accounts.profile",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "anas.ait.ali.04@gmail.com"
+    ],
+    "phone": "",
+    "address": "",
+    "city": "",
+    "postal_code": "",
+    "created_at": "2026-06-02T12:49:28.844Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 15,
+  "fields": {
+    "name": "Casual Shoes",
+    "slug": "casual-shoes",
+    "description": "Chaussures de type Casual Shoes.",
+    "created_at": "2026-06-02T14:32:36.323Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 16,
+  "fields": {
+    "name": "Formal Shoes",
+    "slug": "formal-shoes",
+    "description": "Chaussures de type Formal Shoes.",
+    "created_at": "2026-06-02T14:32:36.624Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 17,
+  "fields": {
+    "name": "Sports Shoes",
+    "slug": "sports-shoes",
+    "description": "Chaussures de type Sports Shoes.",
+    "created_at": "2026-06-02T14:32:36.982Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 18,
+  "fields": {
+    "name": "Flats",
+    "slug": "flats",
+    "description": "Chaussures de type Flats.",
+    "created_at": "2026-06-02T14:32:37.316Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 19,
+  "fields": {
+    "name": "Heels",
+    "slug": "heels",
+    "description": "Chaussures de type Heels.",
+    "created_at": "2026-06-02T14:32:37.710Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 348,
+  "fields": {
+    "name": "Puma Men Future Cat Remix SF Black Casual Shoes",
+    "gender": "Men",
+    "slug": "puma-men-future-cat-remix-sf-black-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Puma Men Future Cat Remix SF Black Casual Shoes.",
+    "price": "297.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/051d64772f1b38ff476fbf0a807f365a_images.jpg",
+    "category": 15,
+    "stock": 25,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.329Z",
+    "updated_at": "2026-06-02T14:32:36.329Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 349,
+  "fields": {
+    "name": "Gas Men Europa White Shoes",
+    "gender": "Men",
+    "slug": "gas-men-europa-white-shoes",
+    "description": "Casual Shoes pour Men. Couleur : White. Style : Casual. Gas Men Europa White Shoes.",
+    "price": "933.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/9c3d77147758ab10f12caf6184fe13ef_images.jpg",
+    "category": 15,
+    "stock": 7,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.336Z",
+    "updated_at": "2026-06-02T14:32:36.336Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 350,
+  "fields": {
+    "name": "Timberland Men Black Casual Shoes",
+    "gender": "Men",
+    "slug": "timberland-men-black-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Timberland Men Black Casual Shoes.",
+    "price": "489.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/70e74ca34b3b534b19d6b006d5bfad0a_images.jpg",
+    "category": 15,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.341Z",
+    "updated_at": "2026-06-02T14:32:36.342Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 351,
+  "fields": {
+    "name": "Vans Men Classic Slip-On Purple & Black Shoes",
+    "gender": "Men",
+    "slug": "vans-men-classic-slip-on-purple-black-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Purple. Style : Casual. Vans Men Classic Slip-On Purple & Black Shoes.",
+    "price": "497.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/49f884ddf4420d869ad143857d3bc33d_images.jpg",
+    "category": 15,
+    "stock": 10,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.347Z",
+    "updated_at": "2026-06-02T14:32:36.347Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 352,
+  "fields": {
+    "name": "ID Men Red Shoes",
+    "gender": "Men",
+    "slug": "id-men-red-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Red. Style : Casual. ID Men Red Shoes.",
+    "price": "379.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/6a6ebc47eaf2fe034bcfd94060a285ba_images.jpg",
+    "category": 15,
+    "stock": 31,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.353Z",
+    "updated_at": "2026-06-02T14:32:36.353Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 353,
+  "fields": {
+    "name": "Vans Men Khaki Shoes",
+    "gender": "Men",
+    "slug": "vans-men-khaki-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Khaki. Style : Casual. Vans Men Khaki Shoes.",
+    "price": "860.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Vans-Men-Khaki-Shoes_dcaf7c703e9c0396650529df2b2a8893_images.jpg",
+    "category": 15,
+    "stock": 29,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.359Z",
+    "updated_at": "2026-06-02T14:32:36.359Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 354,
+  "fields": {
+    "name": "Nike Men Air Rift MTR White Casual Shoe",
+    "gender": "Men",
+    "slug": "nike-men-air-rift-mtr-white-casual-shoe",
+    "description": "Casual Shoes pour Men. Couleur : White. Style : Casual. Nike Men Air Rift MTR White Casual Shoe.",
+    "price": "664.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/ac5a2fb9462db16f4cf5fc0f3616a9e6_images.jpg",
+    "category": 15,
+    "stock": 30,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.365Z",
+    "updated_at": "2026-06-02T14:32:36.365Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 355,
+  "fields": {
+    "name": "Vans Men Blue Era Scilla Plaid Shoes",
+    "gender": "Men",
+    "slug": "vans-men-blue-era-scilla-plaid-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Blue. Style : Casual. Vans Men Blue Era Scilla Plaid Shoes.",
+    "price": "411.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Vans-Men-Blue-Casual-Shoes_f9ad04b071e06c34a04e2c0a047d58a1_images.jpg",
+    "category": 15,
+    "stock": 25,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.370Z",
+    "updated_at": "2026-06-02T14:32:36.370Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 356,
+  "fields": {
+    "name": "ADIDAS Men Black Anzo Breeze Casual Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-black-anzo-breeze-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. ADIDAS Men Black Anzo Breeze Casual Shoes.",
+    "price": "313.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/aca469db7fbac91473fc2a810461889d_images.jpg",
+    "category": 15,
+    "stock": 23,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.376Z",
+    "updated_at": "2026-06-02T14:32:36.376Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 357,
+  "fields": {
+    "name": "Numero Uno Men White Casual Shoes",
+    "gender": "Men",
+    "slug": "numero-uno-men-white-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : White. Style : Casual. Numero Uno Men White Casual Shoes.",
+    "price": "461.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/ff82e800185f09437bdd38606dbd4ec6_images.jpg",
+    "category": 15,
+    "stock": 24,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.383Z",
+    "updated_at": "2026-06-02T14:32:36.383Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 358,
+  "fields": {
+    "name": "Rockport Men LLandro Red Casual Shoes",
+    "gender": "Men",
+    "slug": "rockport-men-llandro-red-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Red. Style : Casual. Rockport Men LLandro Red Casual Shoes.",
+    "price": "281.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/0ea0e6130d5d4c093e0e516f9b43ced6_images.jpg",
+    "category": 15,
+    "stock": 6,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.390Z",
+    "updated_at": "2026-06-02T14:32:36.390Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 359,
+  "fields": {
+    "name": "FILA Men Liga II Black Shoes",
+    "gender": "Men",
+    "slug": "fila-men-liga-ii-black-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. FILA Men Liga II Black Shoes.",
+    "price": "992.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/ea051d39d65bfdcba994e6cd49061bd7_images.jpg",
+    "category": 15,
+    "stock": 15,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.396Z",
+    "updated_at": "2026-06-02T14:32:36.396Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 360,
+  "fields": {
+    "name": "GAS Men Brown Count Casual Shoes",
+    "gender": "Men",
+    "slug": "gas-men-brown-count-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Brown. Style : Casual. GAS Men Brown Count Casual Shoes.",
+    "price": "626.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/f2d705addd04fcf5516aef873254441e_images.jpg",
+    "category": 15,
+    "stock": 12,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.403Z",
+    "updated_at": "2026-06-02T14:32:36.403Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 361,
+  "fields": {
+    "name": "Nike Men White Capri II Casual Shoe",
+    "gender": "Men",
+    "slug": "nike-men-white-capri-ii-casual-shoe",
+    "description": "Casual Shoes pour Men. Couleur : White. Style : Casual. Nike Men White Capri II Casual Shoe.",
+    "price": "538.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/9f8463e724322e0b47cc9f615acab635_images.jpg",
+    "category": 15,
+    "stock": 9,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.409Z",
+    "updated_at": "2026-06-02T14:32:36.409Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 362,
+  "fields": {
+    "name": "Red Chief Men Black Shoes",
+    "gender": "Men",
+    "slug": "red-chief-men-black-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Red Chief Men Black Shoes.",
+    "price": "305.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/2dba90668d61bd7dd5e25a02d7612ee3_images.jpg",
+    "category": 15,
+    "stock": 10,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.416Z",
+    "updated_at": "2026-06-02T14:32:36.416Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 363,
+  "fields": {
+    "name": "United Colors of Benetton Men Casual Black Shoes",
+    "gender": "Men",
+    "slug": "united-colors-of-benetton-men-casual-black-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. United Colors of Benetton Men Casual Black Shoes.",
+    "price": "522.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/fc4d12bcdc99ec17c6cbff23ce164f00_images.jpg",
+    "category": 15,
+    "stock": 2,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.422Z",
+    "updated_at": "2026-06-02T14:32:36.422Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 364,
+  "fields": {
+    "name": "ADIDAS Men Vigor Blue Casual Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-vigor-blue-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Blue. Style : Casual. ADIDAS Men Vigor Blue Casual Shoes.",
+    "price": "264.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/4ce7d857814ce0fec13e120fe55522c9_images.jpg",
+    "category": 15,
+    "stock": 20,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.428Z",
+    "updated_at": "2026-06-02T14:32:36.428Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 365,
+  "fields": {
+    "name": "Puma Men Cavallino Black Shoe",
+    "gender": "Men",
+    "slug": "puma-men-cavallino-black-shoe",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Puma Men Cavallino Black Shoe.",
+    "price": "282.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/57601ed1977aecafecafbfb1fe49a424_images.jpg",
+    "category": 15,
+    "stock": 12,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.434Z",
+    "updated_at": "2026-06-02T14:32:36.434Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 366,
+  "fields": {
+    "name": "Vans Men Maroon & Grey Era Shoes",
+    "gender": "Men",
+    "slug": "vans-men-maroon-grey-era-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Maroon. Style : Casual. Vans Men Maroon & Grey Era Shoes.",
+    "price": "433.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Vans-Men-Maroon---Grey-Era-Shoes_f95fd18a6cf5c1deede9c2a3304cfd2c_images.jpg",
+    "category": 15,
+    "stock": 7,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.440Z",
+    "updated_at": "2026-06-02T14:32:36.440Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 367,
+  "fields": {
+    "name": "Buckaroo Men loma Tan Casual Shoes",
+    "gender": "Men",
+    "slug": "buckaroo-men-loma-tan-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Tan. Style : Casual. Buckaroo Men loma Tan Casual Shoes.",
+    "price": "977.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/c42e34c84003a87f8fc0d5694e82d4c3_images.jpg",
+    "category": 15,
+    "stock": 20,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.446Z",
+    "updated_at": "2026-06-02T14:32:36.446Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 368,
+  "fields": {
+    "name": "Fila Men Lobato Black Casual Shoes",
+    "gender": "Men",
+    "slug": "fila-men-lobato-black-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Fila Men Lobato Black Casual Shoes.",
+    "price": "988.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/593368a3e9649a12de803e50fa2ed17a_images.jpg",
+    "category": 15,
+    "stock": 31,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.455Z",
+    "updated_at": "2026-06-02T14:32:36.455Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 369,
+  "fields": {
+    "name": "Puma Men Standpunkt Brown Casual Shoes",
+    "gender": "Men",
+    "slug": "puma-men-standpunkt-brown-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Brown. Style : Casual. Puma Men Standpunkt Brown Casual Shoes.",
+    "price": "839.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/bcb01252e8d12d743d85d0001586fee0_images.jpg",
+    "category": 15,
+    "stock": 17,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.460Z",
+    "updated_at": "2026-06-02T14:32:36.460Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 370,
+  "fields": {
+    "name": "GAS Men Grey Namib Shoes",
+    "gender": "Men",
+    "slug": "gas-men-grey-namib-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Grey. Style : Casual. GAS Men Grey Namib Shoes.",
+    "price": "389.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/a63da69bf6b0a00d95dde7d444f57bc5_images.jpg",
+    "category": 15,
+    "stock": 12,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.466Z",
+    "updated_at": "2026-06-02T14:32:36.466Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 371,
+  "fields": {
+    "name": "Nike Men Dunk High Grey Shoes",
+    "gender": "Men",
+    "slug": "nike-men-dunk-high-grey-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Grey. Style : Casual. Nike Men Dunk High Grey Shoes.",
+    "price": "863.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/ca603a625578f83eebaa222051bb442b_images.jpg",
+    "category": 15,
+    "stock": 23,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.470Z",
+    "updated_at": "2026-06-02T14:32:36.470Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 372,
+  "fields": {
+    "name": "Numero Uno Men White Shoes",
+    "gender": "Men",
+    "slug": "numero-uno-men-white-shoes",
+    "description": "Casual Shoes pour Men. Couleur : White. Style : Casual. Numero Uno Men White Shoes.",
+    "price": "924.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/115e53e76402ea9af077f2d5e44a7ea4_images.jpg",
+    "category": 15,
+    "stock": 5,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.475Z",
+    "updated_at": "2026-06-02T14:32:36.475Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 373,
+  "fields": {
+    "name": "Red Tape Men Casual Black Casual Shoes",
+    "gender": "Men",
+    "slug": "red-tape-men-casual-black-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Red Tape Men Casual Black Casual Shoes.",
+    "price": "286.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/b1ff46e8d902c8cf2eb2664e792014a6_images.jpg",
+    "category": 15,
+    "stock": 18,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.479Z",
+    "updated_at": "2026-06-02T14:32:36.479Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 374,
+  "fields": {
+    "name": "Nike Men Wardour Chukka Yellow Casual Shoes",
+    "gender": "Men",
+    "slug": "nike-men-wardour-chukka-yellow-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Yellow. Style : Casual. Nike Men Wardour Chukka Yellow Casual Shoes.",
+    "price": "934.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/bf609f778c0433c073cf4857238104eb_images.jpg",
+    "category": 15,
+    "stock": 34,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.485Z",
+    "updated_at": "2026-06-02T14:32:36.485Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 375,
+  "fields": {
+    "name": "Numero Uno Men Navy Blue Casual Shoes",
+    "gender": "Men",
+    "slug": "numero-uno-men-navy-blue-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Navy Blue. Style : Casual. Numero Uno Men Navy Blue Casual Shoes.",
+    "price": "636.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/d0ee2c3d9795f7a1d0f5679e3a6cde55_images.jpg",
+    "category": 15,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.490Z",
+    "updated_at": "2026-06-02T14:32:36.490Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 376,
+  "fields": {
+    "name": "Rockport Men CV Toe HI Charcoal Casual Shoes",
+    "gender": "Men",
+    "slug": "rockport-men-cv-toe-hi-charcoal-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Charcoal. Style : Casual. Rockport Men CV Toe HI Charcoal Casual Shoes.",
+    "price": "309.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/659ca18f067f9fb78cc7824eaf1d165e_images.jpg",
+    "category": 15,
+    "stock": 11,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.496Z",
+    "updated_at": "2026-06-02T14:32:36.496Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 377,
+  "fields": {
+    "name": "Basics Men Red Casual Shoes",
+    "gender": "Men",
+    "slug": "basics-men-red-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Red. Style : Casual. Basics Men Red Casual Shoes.",
+    "price": "892.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/6cdbcb8a0c91f6f08a5eca566a30ba9e_images.jpg",
+    "category": 15,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.500Z",
+    "updated_at": "2026-06-02T14:32:36.500Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 378,
+  "fields": {
+    "name": "Buckaroo Men Brown Casual Shoes",
+    "gender": "Men",
+    "slug": "buckaroo-men-brown-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Brown. Style : Casual. Buckaroo Men Brown Casual Shoes.",
+    "price": "814.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/e5b5823706a1c890f4300f30c92f59b2_images.jpg",
+    "category": 15,
+    "stock": 1,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.506Z",
+    "updated_at": "2026-06-02T14:32:36.506Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 379,
+  "fields": {
+    "name": "Red Tape Men's Brown casual Shoe",
+    "gender": "Men",
+    "slug": "red-tape-mens-brown-casual-shoe",
+    "description": "Casual Shoes pour Men. Couleur : Brown. Style : Casual. Red Tape Men's Brown casual Shoe.",
+    "price": "920.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/e1f82da932e688fe0f59740369c59b97_images.jpg",
+    "category": 15,
+    "stock": 27,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.511Z",
+    "updated_at": "2026-06-02T14:32:36.511Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 380,
+  "fields": {
+    "name": "Numero Uno Men White Shoes",
+    "gender": "Men",
+    "slug": "numero-uno-men-white-shoes-1",
+    "description": "Casual Shoes pour Men. Couleur : White. Style : Casual. Numero Uno Men White Shoes.",
+    "price": "834.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/26e93a4246e479e84c16a0ae547d2158_images.jpg",
+    "category": 15,
+    "stock": 37,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.518Z",
+    "updated_at": "2026-06-02T14:32:36.518Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 381,
+  "fields": {
+    "name": "GAS Men Grey Campus Casual Shoes",
+    "gender": "Men",
+    "slug": "gas-men-grey-campus-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Grey. Style : Casual. GAS Men Grey Campus Casual Shoes.",
+    "price": "724.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/GAS-Men-Casual-Shoes_b877c388a1212f0886ad1cb52e5c03fb_images.jpg",
+    "category": 15,
+    "stock": 16,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.524Z",
+    "updated_at": "2026-06-02T14:32:36.524Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 382,
+  "fields": {
+    "name": "Enroute Men Leather Brown Casual Shoes",
+    "gender": "Men",
+    "slug": "enroute-men-leather-brown-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Tan. Style : Casual. Enroute Men Leather Brown Casual Shoes.",
+    "price": "785.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/b3ead7db8f3572f146a7d807742b9f43_images.jpg",
+    "category": 15,
+    "stock": 17,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.529Z",
+    "updated_at": "2026-06-02T14:32:36.529Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 383,
+  "fields": {
+    "name": "Timberland Men Black Casual Shoes",
+    "gender": "Men",
+    "slug": "timberland-men-black-casual-shoes-1",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Timberland Men Black Casual Shoes.",
+    "price": "414.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/5863961b3510970c2e31d466af69b32b_images.jpg",
+    "category": 15,
+    "stock": 38,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.535Z",
+    "updated_at": "2026-06-02T14:32:36.535Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 384,
+  "fields": {
+    "name": "Gas Men Skate 003 Casual Shoe",
+    "gender": "Men",
+    "slug": "gas-men-skate-003-casual-shoe",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Gas Men Skate 003 Casual Shoe.",
+    "price": "634.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/525f30ac2bcf55f1da135dcc70a1c296_images.jpg",
+    "category": 15,
+    "stock": 18,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.541Z",
+    "updated_at": "2026-06-02T14:32:36.541Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 385,
+  "fields": {
+    "name": "Clarks Men Goto Hi Cola Suede Brown Shoes",
+    "gender": "Men",
+    "slug": "clarks-men-goto-hi-cola-suede-brown-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Brown. Style : Casual. Clarks Men Goto Hi Cola Suede Brown Shoes.",
+    "price": "481.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/4269a355e474308b6e0f174cf6a9f6f0_images.jpg",
+    "category": 15,
+    "stock": 2,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.546Z",
+    "updated_at": "2026-06-02T14:32:36.546Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 386,
+  "fields": {
+    "name": "Fila Men Leonard Red Shoes",
+    "gender": "Men",
+    "slug": "fila-men-leonard-red-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Red. Style : Casual. Fila Men Leonard Red Shoes.",
+    "price": "526.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/6c47906c4ede8ac1c9142bdba8e6fd63_images.jpg",
+    "category": 15,
+    "stock": 0,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.552Z",
+    "updated_at": "2026-06-02T14:32:36.552Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 387,
+  "fields": {
+    "name": "Timberland Men Black Casual Shoes",
+    "gender": "Men",
+    "slug": "timberland-men-black-casual-shoes-2",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Timberland Men Black Casual Shoes.",
+    "price": "556.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/13b63be853066689953a150fe1986bba_images.jpg",
+    "category": 15,
+    "stock": 30,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.559Z",
+    "updated_at": "2026-06-02T14:32:36.559Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 388,
+  "fields": {
+    "name": "ID Men White Shoes",
+    "gender": "Men",
+    "slug": "id-men-white-shoes",
+    "description": "Casual Shoes pour Men. Couleur : White. Style : Casual. ID Men White Shoes.",
+    "price": "861.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/9bbb0a99f2262993b7b659959fbcf3bc_images.jpg",
+    "category": 15,
+    "stock": 31,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.565Z",
+    "updated_at": "2026-06-02T14:32:36.565Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 389,
+  "fields": {
+    "name": "Vans Men Black Era Shoes",
+    "gender": "Men",
+    "slug": "vans-men-black-era-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Vans Men Black Era Shoes.",
+    "price": "629.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Vans-Men-Black-Era-Shoes_e1fd73af72d76d932ba25c9738a8586d_images.jpg",
+    "category": 15,
+    "stock": 29,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.570Z",
+    "updated_at": "2026-06-02T14:32:36.570Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 390,
+  "fields": {
+    "name": "Playboy Men Black Shoes",
+    "gender": "Men",
+    "slug": "playboy-men-black-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Playboy Men Black Shoes.",
+    "price": "651.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/18ecb9a34ecd356d39bc6f15b87fe64c_images.jpg",
+    "category": 15,
+    "stock": 34,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.576Z",
+    "updated_at": "2026-06-02T14:32:36.576Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 391,
+  "fields": {
+    "name": "Gas Men Mila Navy Blue Shoes",
+    "gender": "Men",
+    "slug": "gas-men-mila-navy-blue-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Navy Blue. Style : Casual. Gas Men Mila Navy Blue Shoes.",
+    "price": "442.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/ca8904a9a90c8c44c7b08519b394e8ac_images.jpg",
+    "category": 15,
+    "stock": 3,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.582Z",
+    "updated_at": "2026-06-02T14:32:36.582Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 392,
+  "fields": {
+    "name": "Red Tape Men Casual Brown Casual Shoes",
+    "gender": "Men",
+    "slug": "red-tape-men-casual-brown-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Brown. Style : Casual. Red Tape Men Casual Brown Casual Shoes.",
+    "price": "307.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/7f5bf1bfc926e96373823989b1c4f420_images.jpg",
+    "category": 15,
+    "stock": 0,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.588Z",
+    "updated_at": "2026-06-02T14:32:36.588Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 393,
+  "fields": {
+    "name": "ADIDAS Men Brown Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-brown-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Brown. Style : Casual. ADIDAS Men Brown Shoes.",
+    "price": "290.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/b676624ef006e153f4ac61d5a70d31d8_images.jpg",
+    "category": 15,
+    "stock": 22,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.594Z",
+    "updated_at": "2026-06-02T14:32:36.594Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 394,
+  "fields": {
+    "name": "Numero Uno Men Navy Blue Shoes",
+    "gender": "Men",
+    "slug": "numero-uno-men-navy-blue-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Navy Blue. Style : Casual. Numero Uno Men Navy Blue Shoes.",
+    "price": "538.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/409871b3e6186c220fab46f5d2b90c7c_images.jpg",
+    "category": 15,
+    "stock": 10,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.600Z",
+    "updated_at": "2026-06-02T14:32:36.600Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 395,
+  "fields": {
+    "name": "Fila Men Syncro White Shoes",
+    "gender": "Men",
+    "slug": "fila-men-syncro-white-shoes",
+    "description": "Casual Shoes pour Men. Couleur : White. Style : Casual. Fila Men Syncro White Shoes.",
+    "price": "368.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/3f475a31c39bcc9c6045a9f8c7452893_images.jpg",
+    "category": 15,
+    "stock": 40,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.606Z",
+    "updated_at": "2026-06-02T14:32:36.606Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 396,
+  "fields": {
+    "name": "Basics Men Black Casual Shoes",
+    "gender": "Men",
+    "slug": "basics-men-black-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Black. Style : Casual. Basics Men Black Casual Shoes.",
+    "price": "648.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/3b86808004a5829edc1076ddeb5ebe4f_images.jpg",
+    "category": 15,
+    "stock": 10,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.614Z",
+    "updated_at": "2026-06-02T14:32:36.614Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 397,
+  "fields": {
+    "name": "Puma Men Archive Boot WTR Brown Casual Shoes",
+    "gender": "Men",
+    "slug": "puma-men-archive-boot-wtr-brown-casual-shoes",
+    "description": "Casual Shoes pour Men. Couleur : Brown. Style : Casual. Puma Men Archive Boot WTR Brown Casual Shoes.",
+    "price": "602.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/541e84bced1067d6ef4e59508561a303_images.jpg",
+    "category": 15,
+    "stock": 21,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.619Z",
+    "updated_at": "2026-06-02T14:32:36.619Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 398,
+  "fields": {
+    "name": "Buckaroo Men Flores Black Formal Shoes",
+    "gender": "Men",
+    "slug": "buckaroo-men-flores-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Buckaroo Men Flores Black Formal Shoes.",
+    "price": "1538.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/06edc2da9c6d103d299e5e8dafc5b6b9_images.jpg",
+    "category": 16,
+    "stock": 21,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.629Z",
+    "updated_at": "2026-06-02T14:32:36.629Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 399,
+  "fields": {
+    "name": "Clarks Men Hang Work Leather Black Formal Shoes",
+    "gender": "Men",
+    "slug": "clarks-men-hang-work-leather-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Clarks Men Hang Work Leather Black Formal Shoes.",
+    "price": "970.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/2976e4095e7b3ae2de99df54d2adeaaa_images.jpg",
+    "category": 16,
+    "stock": 33,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.634Z",
+    "updated_at": "2026-06-02T14:32:36.634Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 400,
+  "fields": {
+    "name": "Arrow Men Black Formal Shoes",
+    "gender": "Men",
+    "slug": "arrow-men-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Arrow Men Black Formal Shoes.",
+    "price": "885.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Arrow-Men-Black-Formal-Shoes_70a3c7c185338a5636c8c0e668829bb6_images.jpg",
+    "category": 16,
+    "stock": 36,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.639Z",
+    "updated_at": "2026-06-02T14:32:36.639Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 401,
+  "fields": {
+    "name": "Arrow Men Formal Black Shoe",
+    "gender": "Men",
+    "slug": "arrow-men-formal-black-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Arrow Men Formal Black Shoe.",
+    "price": "1509.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/0201105e4604bc784525d9cf0e972c40_images.jpg",
+    "category": 16,
+    "stock": 35,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.645Z",
+    "updated_at": "2026-06-02T14:32:36.645Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 402,
+  "fields": {
+    "name": "Carlton London Men Formal Brown Formal Shoes",
+    "gender": "Men",
+    "slug": "carlton-london-men-formal-brown-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Carlton London Men Formal Brown Formal Shoes.",
+    "price": "755.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/b195b911f558c0232e22849d1ca73193_images.jpg",
+    "category": 16,
+    "stock": 5,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.651Z",
+    "updated_at": "2026-06-02T14:32:36.651Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 403,
+  "fields": {
+    "name": "Arrow Men Black Formal Shoes",
+    "gender": "Men",
+    "slug": "arrow-men-black-formal-shoes-1",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Arrow Men Black Formal Shoes.",
+    "price": "787.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/8f3b9f4c5f554e39681567b22985966e_images.jpg",
+    "category": 16,
+    "stock": 20,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.657Z",
+    "updated_at": "2026-06-02T14:32:36.657Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 404,
+  "fields": {
+    "name": "Enroute Men Leather Black Formal Shoes",
+    "gender": "Men",
+    "slug": "enroute-men-leather-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Enroute Men Leather Black Formal Shoes.",
+    "price": "1337.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/1e1ddab59626e99f7163c2c8c20743b6_images.jpg",
+    "category": 16,
+    "stock": 6,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.663Z",
+    "updated_at": "2026-06-02T14:32:36.663Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 405,
+  "fields": {
+    "name": "Red Tape Men's Black Formal Shoe",
+    "gender": "Men",
+    "slug": "red-tape-mens-black-formal-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Red Tape Men's Black Formal Shoe.",
+    "price": "1360.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/f100c2c689ac3bf1ecbf643b1921c001_images.jpg",
+    "category": 16,
+    "stock": 24,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.668Z",
+    "updated_at": "2026-06-02T14:32:36.668Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 406,
+  "fields": {
+    "name": "Enroute Men Leather Black Formal Shoes",
+    "gender": "Men",
+    "slug": "enroute-men-leather-black-formal-shoes-1",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Enroute Men Leather Black Formal Shoes.",
+    "price": "1338.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/c80c08ee91ff76e9ef5f3ec53fc6b6a7_images.jpg",
+    "category": 16,
+    "stock": 38,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.673Z",
+    "updated_at": "2026-06-02T14:32:36.673Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 407,
+  "fields": {
+    "name": "Red Chief Men Black Formal Shoes",
+    "gender": "Men",
+    "slug": "red-chief-men-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Red Chief Men Black Formal Shoes.",
+    "price": "669.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/70545e7653ee98ed7a82d2b13fc2d93b_images.jpg",
+    "category": 16,
+    "stock": 22,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.680Z",
+    "updated_at": "2026-06-02T14:32:36.680Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 408,
+  "fields": {
+    "name": "Lee Cooper Men Black Formal Shoes",
+    "gender": "Men",
+    "slug": "lee-cooper-men-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Lee Cooper Men Black Formal Shoes.",
+    "price": "1241.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/8ad35a71d39ef0432055771175ca3adc_images.jpg",
+    "category": 16,
+    "stock": 2,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.686Z",
+    "updated_at": "2026-06-02T14:32:36.686Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 409,
+  "fields": {
+    "name": "Arrow Men Brown Formal Shoes",
+    "gender": "Men",
+    "slug": "arrow-men-brown-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Arrow Men Brown Formal Shoes.",
+    "price": "798.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/2b27b053871a6e9325c0f422fe92b67a_images.jpg",
+    "category": 16,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.693Z",
+    "updated_at": "2026-06-02T14:32:36.693Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 410,
+  "fields": {
+    "name": "Carlton London Men Black Oxford Wingtip Brogues",
+    "gender": "Men",
+    "slug": "carlton-london-men-black-oxford-wingtip-brogues",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Carlton London Men Black Oxford Wingtip Brogues.",
+    "price": "478.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/f1d954cfacfc79f32325794d43b6c3a0_images.jpg",
+    "category": 16,
+    "stock": 7,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.698Z",
+    "updated_at": "2026-06-02T14:32:36.698Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 411,
+  "fields": {
+    "name": "Franco Leone Men Formal Shoes",
+    "gender": "Men",
+    "slug": "franco-leone-men-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Franco Leone Men Formal Shoes.",
+    "price": "1204.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/851760e82d34ebdc4b38d0dcd399e3f2_images.jpg",
+    "category": 16,
+    "stock": 0,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.704Z",
+    "updated_at": "2026-06-02T14:32:36.704Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 412,
+  "fields": {
+    "name": "Arrow Men Formal Black Shoes",
+    "gender": "Men",
+    "slug": "arrow-men-formal-black-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Arrow Men Formal Black Shoes.",
+    "price": "939.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/ae9b19f9e5b20995dd206e0400b2dbce_images.jpg",
+    "category": 16,
+    "stock": 1,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.710Z",
+    "updated_at": "2026-06-02T14:32:36.710Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 413,
+  "fields": {
+    "name": "Franco Leone Men Black Formal Shoes",
+    "gender": "Men",
+    "slug": "franco-leone-men-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Franco Leone Men Black Formal Shoes.",
+    "price": "577.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/81cf8c19e59aa21dd516d55a44f49a35_images.jpg",
+    "category": 16,
+    "stock": 38,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.716Z",
+    "updated_at": "2026-06-02T14:32:36.716Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 414,
+  "fields": {
+    "name": "Lee Cooper Men Black Semi Formal Shoe",
+    "gender": "Men",
+    "slug": "lee-cooper-men-black-semi-formal-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Lee Cooper Men Black Semi Formal Shoe.",
+    "price": "1044.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/f9e6c0170eadb83b2f0c082b457548a2_images.jpg",
+    "category": 16,
+    "stock": 10,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.723Z",
+    "updated_at": "2026-06-02T14:32:36.723Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 415,
+  "fields": {
+    "name": "Red Tape Men Brown Shoes",
+    "gender": "Men",
+    "slug": "red-tape-men-brown-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Red Tape Men Brown Shoes.",
+    "price": "1555.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/e7ca97d7b2f468e63a1f84cc988c72ca_images.jpg",
+    "category": 16,
+    "stock": 20,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.729Z",
+    "updated_at": "2026-06-02T14:32:36.729Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 416,
+  "fields": {
+    "name": "Buckaroo Men Medina Brown Formal Shoes",
+    "gender": "Men",
+    "slug": "buckaroo-men-medina-brown-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Buckaroo Men Medina Brown Formal Shoes.",
+    "price": "448.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/72da3d057e90841278201ab75c993aff_images.jpg",
+    "category": 16,
+    "stock": 38,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.735Z",
+    "updated_at": "2026-06-02T14:32:36.735Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 417,
+  "fields": {
+    "name": "Red Tape Men's Black Formal Shoe",
+    "gender": "Men",
+    "slug": "red-tape-mens-black-formal-shoe-1",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Red Tape Men's Black Formal Shoe.",
+    "price": "1086.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/3824fbb868e03010753ee203cac2efc5_images.jpg",
+    "category": 16,
+    "stock": 0,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.741Z",
+    "updated_at": "2026-06-02T14:32:36.741Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 418,
+  "fields": {
+    "name": "Clarks Men Dino Limit Brown Formal Shoes",
+    "gender": "Men",
+    "slug": "clarks-men-dino-limit-brown-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Clarks Men Dino Limit Brown Formal Shoes.",
+    "price": "1446.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Clarks-Men-Formal-Shoes_d8593516fd4c7bfd45328e976caa96c6_images.jpg",
+    "category": 16,
+    "stock": 28,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.748Z",
+    "updated_at": "2026-06-02T14:32:36.748Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 419,
+  "fields": {
+    "name": "Red Tape Men Black Semi Formal Shoes",
+    "gender": "Men",
+    "slug": "red-tape-men-black-semi-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Red Tape Men Black Semi Formal Shoes.",
+    "price": "1336.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Red-Tape-Men-Black-Semi-Formal-Shoes_6d0e438208cfddf1a1c0423a04a3cc21_images.jpg",
+    "category": 16,
+    "stock": 8,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.754Z",
+    "updated_at": "2026-06-02T14:32:36.754Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 420,
+  "fields": {
+    "name": "Red Tape Men Black Semi Formal Shoes",
+    "gender": "Men",
+    "slug": "red-tape-men-black-semi-formal-shoes-1",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Red Tape Men Black Semi Formal Shoes.",
+    "price": "958.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/5e6825aad55fd535636671ed72b2c3ee_images.jpg",
+    "category": 16,
+    "stock": 5,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.761Z",
+    "updated_at": "2026-06-02T14:32:36.761Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 421,
+  "fields": {
+    "name": "Provogue Men Black Formal Shoes",
+    "gender": "Men",
+    "slug": "provogue-men-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Provogue Men Black Formal Shoes.",
+    "price": "963.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/158c6b88bfcd1176eb8c4497a6ac8c86_images.jpg",
+    "category": 16,
+    "stock": 35,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.767Z",
+    "updated_at": "2026-06-02T14:32:36.767Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 422,
+  "fields": {
+    "name": "Lee Cooper Men Nnado Black Formal Shoes",
+    "gender": "Men",
+    "slug": "lee-cooper-men-nnado-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Lee Cooper Men Nnado Black Formal Shoes.",
+    "price": "1475.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/ef183787311e4d8e9f33dcf3ceff9102_images.jpg",
+    "category": 16,
+    "stock": 17,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.772Z",
+    "updated_at": "2026-06-02T14:32:36.772Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 423,
+  "fields": {
+    "name": "Clarks Men Black Formal Shoes",
+    "gender": "Men",
+    "slug": "clarks-men-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Clarks Men Black Formal Shoes.",
+    "price": "1472.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/7fbee63ac47052f962bd5f25aa8652b8_images.jpg",
+    "category": 16,
+    "stock": 13,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.778Z",
+    "updated_at": "2026-06-02T14:32:36.778Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 424,
+  "fields": {
+    "name": "Franco Leone Men Formal Black Formal Shoes",
+    "gender": "Men",
+    "slug": "franco-leone-men-formal-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Franco Leone Men Formal Black Formal Shoes.",
+    "price": "1392.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/262366467631b95873f546524b2444c9_images.jpg",
+    "category": 16,
+    "stock": 3,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.784Z",
+    "updated_at": "2026-06-02T14:32:36.784Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 425,
+  "fields": {
+    "name": "Carlton London Men Semi Formal Black Shoe",
+    "gender": "Men",
+    "slug": "carlton-london-men-semi-formal-black-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Carlton London Men Semi Formal Black Shoe.",
+    "price": "1570.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/e571426e3de987910f5bdd984338bd77_images.jpg",
+    "category": 16,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.790Z",
+    "updated_at": "2026-06-02T14:32:36.790Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 426,
+  "fields": {
+    "name": "Provouge Men Black Formal Shoes",
+    "gender": "Men",
+    "slug": "provouge-men-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Provouge Men Black Formal Shoes.",
+    "price": "464.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/66382fb6d614ca7cada5bd95f7b4cd9c_images.jpg",
+    "category": 16,
+    "stock": 22,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.796Z",
+    "updated_at": "2026-06-02T14:32:36.796Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 427,
+  "fields": {
+    "name": "Clarks Men Brown Formal Shoes",
+    "gender": "Men",
+    "slug": "clarks-men-brown-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Clarks Men Brown Formal Shoes.",
+    "price": "1210.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Clarks-Men-Brown-Formal-Shoes_cae81cf723ab38cd1a0921981bba2a05_images.jpg",
+    "category": 16,
+    "stock": 24,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.802Z",
+    "updated_at": "2026-06-02T14:32:36.802Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 428,
+  "fields": {
+    "name": "Lee Cooper Men  Black Formal Shoe",
+    "gender": "Men",
+    "slug": "lee-cooper-men-black-formal-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Lee Cooper Men  Black Formal Shoe.",
+    "price": "489.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/a1c9a53125108ea6f659900cfdfe47c5_images.jpg",
+    "category": 16,
+    "stock": 32,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.810Z",
+    "updated_at": "2026-06-02T14:32:36.810Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 429,
+  "fields": {
+    "name": "Red Tape Men Black Shoes",
+    "gender": "Men",
+    "slug": "red-tape-men-black-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Casual. Red Tape Men Black Shoes.",
+    "price": "1380.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/0fb65c93f7960b36fea651ab805b13be_images.jpg",
+    "category": 16,
+    "stock": 38,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.817Z",
+    "updated_at": "2026-06-02T14:32:36.817Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 430,
+  "fields": {
+    "name": "Provouge Men Black Classic Formal Shoe",
+    "gender": "Men",
+    "slug": "provouge-men-black-classic-formal-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Provouge Men Black Classic Formal Shoe.",
+    "price": "1276.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/14ef53b95d09aa996909d3035e782203_images.jpg",
+    "category": 16,
+    "stock": 0,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.823Z",
+    "updated_at": "2026-06-02T14:32:36.823Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 431,
+  "fields": {
+    "name": "Lee Cooper Men Leather Semi Formal Brown Shoe",
+    "gender": "Men",
+    "slug": "lee-cooper-men-leather-semi-formal-brown-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Lee Cooper Men Leather Semi Formal Brown Shoe.",
+    "price": "782.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/af0944e686e90b5d9dbc5bc7e0be982f_images.jpg",
+    "category": 16,
+    "stock": 31,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.831Z",
+    "updated_at": "2026-06-02T14:32:36.831Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 432,
+  "fields": {
+    "name": "Enroute Men Leather Tan Formal Shoes",
+    "gender": "Men",
+    "slug": "enroute-men-leather-tan-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Tan. Style : Formal. Enroute Men Leather Tan Formal Shoes.",
+    "price": "1409.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/f68b67a4d85b376e096423f7f68e2749_images.jpg",
+    "category": 16,
+    "stock": 9,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.837Z",
+    "updated_at": "2026-06-02T14:32:36.837Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 433,
+  "fields": {
+    "name": "Clarks Men Feeling Good Leather Brown Formal Shoes",
+    "gender": "Men",
+    "slug": "clarks-men-feeling-good-leather-brown-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Clarks Men Feeling Good Leather Brown Formal Shoes.",
+    "price": "1051.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/91b438e6f6ad7cf63571fdea86dc7f68_images.jpg",
+    "category": 16,
+    "stock": 25,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.846Z",
+    "updated_at": "2026-06-02T14:32:36.846Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 434,
+  "fields": {
+    "name": "Arrow Men Formal Brown Shoe",
+    "gender": "Men",
+    "slug": "arrow-men-formal-brown-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Arrow Men Formal Brown Shoe.",
+    "price": "617.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/f7d8e92858d00fc9326445424a6f8e85_images.jpg",
+    "category": 16,
+    "stock": 11,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.852Z",
+    "updated_at": "2026-06-02T14:32:36.852Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 435,
+  "fields": {
+    "name": "Franco Leone Men Brown Makhani Formal Shoes",
+    "gender": "Men",
+    "slug": "franco-leone-men-brown-makhani-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Franco Leone Men Brown Makhani Formal Shoes.",
+    "price": "1050.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/f4358b5eeaa2a8e70b42db60518f59aa_images.jpg",
+    "category": 16,
+    "stock": 19,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.859Z",
+    "updated_at": "2026-06-02T14:32:36.859Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 436,
+  "fields": {
+    "name": "Lee Cooper Men Black Shoe",
+    "gender": "Men",
+    "slug": "lee-cooper-men-black-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Lee Cooper Men Black Shoe.",
+    "price": "1428.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/30826a489f3fb44e19fac8f68a5fdcbf_images.jpg",
+    "category": 16,
+    "stock": 34,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.866Z",
+    "updated_at": "2026-06-02T14:32:36.866Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 437,
+  "fields": {
+    "name": "Buckaroo Men Victor Black Formal Shoes",
+    "gender": "Men",
+    "slug": "buckaroo-men-victor-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Buckaroo Men Victor Black Formal Shoes.",
+    "price": "740.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/a6b18114bdf93ad684db5ceff4207821_images.jpg",
+    "category": 16,
+    "stock": 24,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.873Z",
+    "updated_at": "2026-06-02T14:32:36.873Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 438,
+  "fields": {
+    "name": "Red Tape Men's Black Slip-On Formal Shoe",
+    "gender": "Men",
+    "slug": "red-tape-mens-black-slip-on-formal-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Red Tape Men's Black Slip-On Formal Shoe.",
+    "price": "830.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/296ac470d429413d69d62e8105a8d6cb_images.jpg",
+    "category": 16,
+    "stock": 22,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.879Z",
+    "updated_at": "2026-06-02T14:32:36.879Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 439,
+  "fields": {
+    "name": "Franco Leone Men Brown Shoes",
+    "gender": "Men",
+    "slug": "franco-leone-men-brown-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Franco Leone Men Brown Shoes.",
+    "price": "1234.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/77d7bccf564d9807859c6841037f4112_images.jpg",
+    "category": 16,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.886Z",
+    "updated_at": "2026-06-02T14:32:36.886Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 440,
+  "fields": {
+    "name": "Rockport Men's Tyson Black Shoe",
+    "gender": "Men",
+    "slug": "rockport-mens-tyson-black-shoe",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Rockport Men's Tyson Black Shoe.",
+    "price": "966.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/3b94b896182e9eb5cb6cc4aa5be6801a_images.jpg",
+    "category": 16,
+    "stock": 36,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.893Z",
+    "updated_at": "2026-06-02T14:32:36.893Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 441,
+  "fields": {
+    "name": "Red Tape Men Brown Shoes",
+    "gender": "Men",
+    "slug": "red-tape-men-brown-shoes-1",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Red Tape Men Brown Shoes.",
+    "price": "1211.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/3de65566d817f454427054e97487d2c5_images.jpg",
+    "category": 16,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.902Z",
+    "updated_at": "2026-06-02T14:32:36.902Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 442,
+  "fields": {
+    "name": "Franco Leone Men Dark Brown Formal Shoes",
+    "gender": "Men",
+    "slug": "franco-leone-men-dark-brown-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Franco Leone Men Dark Brown Formal Shoes.",
+    "price": "1238.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Franco-Leone-Men-Dark-Brown-Formal-Shoes_a6960feb0858f028113fe4f768fd9aa7_images.jpg",
+    "category": 16,
+    "stock": 18,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.908Z",
+    "updated_at": "2026-06-02T14:32:36.908Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 443,
+  "fields": {
+    "name": "Arrow Men Black Formal Shoes",
+    "gender": "Men",
+    "slug": "arrow-men-black-formal-shoes-2",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Arrow Men Black Formal Shoes.",
+    "price": "786.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/a05fe01290b257157bc99ca67515ad3e_images.jpg",
+    "category": 16,
+    "stock": 25,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.916Z",
+    "updated_at": "2026-06-02T14:32:36.916Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 444,
+  "fields": {
+    "name": "Cobblerz Men Black Formal Shoes",
+    "gender": "Men",
+    "slug": "cobblerz-men-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Cobblerz Men Black Formal Shoes.",
+    "price": "787.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/b3f685b0647893db1800788d924c9f24_images.jpg",
+    "category": 16,
+    "stock": 14,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.922Z",
+    "updated_at": "2026-06-02T14:32:36.922Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 445,
+  "fields": {
+    "name": "Enroute Men Leather Brown Formal Shoes",
+    "gender": "Men",
+    "slug": "enroute-men-leather-brown-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Enroute Men Leather Brown Formal Shoes.",
+    "price": "661.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/2ba5a829cc364c32b327839a47f43e8e_images.jpg",
+    "category": 16,
+    "stock": 31,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.929Z",
+    "updated_at": "2026-06-02T14:32:36.929Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 446,
+  "fields": {
+    "name": "Buckaroo Men Medina Black Formal Shoes",
+    "gender": "Men",
+    "slug": "buckaroo-men-medina-black-formal-shoes",
+    "description": "Formal Shoes pour Men. Couleur : Black. Style : Formal. Buckaroo Men Medina Black Formal Shoes.",
+    "price": "1562.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/a8ac7df8dc72daebf55abfb65c363671_images.jpg",
+    "category": 16,
+    "stock": 38,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.969Z",
+    "updated_at": "2026-06-02T14:32:36.969Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 447,
+  "fields": {
+    "name": "Enroute Men Leather Brown Formal Shoes",
+    "gender": "Men",
+    "slug": "enroute-men-leather-brown-formal-shoes-1",
+    "description": "Formal Shoes pour Men. Couleur : Brown. Style : Formal. Enroute Men Leather Brown Formal Shoes.",
+    "price": "913.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/0bfd0d3daf35ed10a922ec248548470f_images.jpg",
+    "category": 16,
+    "stock": 6,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.976Z",
+    "updated_at": "2026-06-02T14:32:36.976Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 448,
+  "fields": {
+    "name": "Nike Men's Incinerate MSL White Blue Shoe",
+    "gender": "Men",
+    "slug": "nike-mens-incinerate-msl-white-blue-shoe",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Nike Men's Incinerate MSL White Blue Shoe.",
+    "price": "1222.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/4eff2353c62ec8b7bca9fbbaf5996bd2_images.jpg",
+    "category": 17,
+    "stock": 35,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.987Z",
+    "updated_at": "2026-06-02T14:32:36.987Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 449,
+  "fields": {
+    "name": "ADIDAS Men's Lowell White Silver Shoe",
+    "gender": "Men",
+    "slug": "adidas-mens-lowell-white-silver-shoe",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. ADIDAS Men's Lowell White Silver Shoe.",
+    "price": "1407.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/0707b75d2d44e9cec9d27c944294ddbe_images.jpg",
+    "category": 17,
+    "stock": 25,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.993Z",
+    "updated_at": "2026-06-02T14:32:36.993Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 450,
+  "fields": {
+    "name": "Puma Men Axis White & Grey Sports Shoes",
+    "gender": "Men",
+    "slug": "puma-men-axis-white-grey-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Puma Men Axis White & Grey Sports Shoes.",
+    "price": "426.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/52ad8ae288ba080d88a116b3c70305ec_images.jpg",
+    "category": 17,
+    "stock": 22,
+    "available": true,
+    "created_at": "2026-06-02T14:32:36.999Z",
+    "updated_at": "2026-06-02T14:32:36.999Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 451,
+  "fields": {
+    "name": "ADIDAS Men White Corona Sports Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-white-corona-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. ADIDAS Men White Corona Sports Shoes.",
+    "price": "1139.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/5059a8f382c53105f1bdce6780543934_images.jpg",
+    "category": 17,
+    "stock": 16,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.005Z",
+    "updated_at": "2026-06-02T14:32:37.005Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 452,
+  "fields": {
+    "name": "Fila Men Destiny Grey Sports Shoes",
+    "gender": "Men",
+    "slug": "fila-men-destiny-grey-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Grey. Style : Sports. Fila Men Destiny Grey Sports Shoes.",
+    "price": "1310.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/498da65eeee9a23f2049449258384d55_images.jpg",
+    "category": 17,
+    "stock": 29,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.011Z",
+    "updated_at": "2026-06-02T14:32:37.011Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 453,
+  "fields": {
+    "name": "ADIDAS Men Blue Chill Sports Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-blue-chill-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Blue. Style : Sports. ADIDAS Men Blue Chill Sports Shoes.",
+    "price": "852.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/c0abfa74fe61af6ba9e5f4936f45e6c7_images.jpg",
+    "category": 17,
+    "stock": 40,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.016Z",
+    "updated_at": "2026-06-02T14:32:37.016Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 454,
+  "fields": {
+    "name": "Nike Men Air Relentless 2 MSL White Sports Shoes",
+    "gender": "Men",
+    "slug": "nike-men-air-relentless-2-msl-white-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Nike Men Air Relentless 2 MSL White Sports Shoes.",
+    "price": "1256.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/16a858c7c58d665ba030df2f9f326086_images.jpg",
+    "category": 17,
+    "stock": 26,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.023Z",
+    "updated_at": "2026-06-02T14:32:37.023Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 455,
+  "fields": {
+    "name": "Lotto Men Atlantica Black Sports Shoe",
+    "gender": "Men",
+    "slug": "lotto-men-atlantica-black-sports-shoe",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Lotto Men Atlantica Black Sports Shoe.",
+    "price": "727.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/1279efc8b61fb461a804f0c1f82f276b_images.jpg",
+    "category": 17,
+    "stock": 30,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.028Z",
+    "updated_at": "2026-06-02T14:32:37.028Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 456,
+  "fields": {
+    "name": "ADIDAS Men Sports Black Sports Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-sports-black-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. ADIDAS Men Sports Black Sports Shoes.",
+    "price": "543.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/9c0d1badace8d2eb9680232648e94d85_images.jpg",
+    "category": 17,
+    "stock": 24,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.034Z",
+    "updated_at": "2026-06-02T14:32:37.034Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 457,
+  "fields": {
+    "name": "F Sports Men White Outlander Sports Shoes",
+    "gender": "Men",
+    "slug": "f-sports-men-white-outlander-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Casual. F Sports Men White Outlander Sports Shoes.",
+    "price": "1349.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/F-Sports-Men-White-Outlander-Sports-Shoes_b600b7c68b5e9dd8b56dcd8732ce0fda_images.jpg",
+    "category": 17,
+    "stock": 3,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.043Z",
+    "updated_at": "2026-06-02T14:32:37.043Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 458,
+  "fields": {
+    "name": "Puma Men's YugoRun Black White Shoe",
+    "gender": "Men",
+    "slug": "puma-mens-yugorun-black-white-shoe",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Puma Men's YugoRun Black White Shoe.",
+    "price": "933.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/fae0ae76d008674551fbdbb64988ea51_images.jpg",
+    "category": 17,
+    "stock": 26,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.050Z",
+    "updated_at": "2026-06-02T14:32:37.050Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 459,
+  "fields": {
+    "name": "Puma Men Cabana Racer Sketch White Sports Shoes",
+    "gender": "Men",
+    "slug": "puma-men-cabana-racer-sketch-white-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Puma Men Cabana Racer Sketch White Sports Shoes.",
+    "price": "836.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/c7a70ae4f57ca4c605f4fabb82c735fc_images.jpg",
+    "category": 17,
+    "stock": 35,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.057Z",
+    "updated_at": "2026-06-02T14:32:37.057Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 460,
+  "fields": {
+    "name": "ADIDAS Men Sukoi White Sports Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-sukoi-white-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. ADIDAS Men Sukoi White Sports Shoes.",
+    "price": "930.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/0eeb810eac77b956c5b62381e1f3010b_images.jpg",
+    "category": 17,
+    "stock": 6,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.064Z",
+    "updated_at": "2026-06-02T14:32:37.064Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 461,
+  "fields": {
+    "name": "Fila Men Grey Hex Sports Shoes",
+    "gender": "Men",
+    "slug": "fila-men-grey-hex-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Grey. Style : Sports. Fila Men Grey Hex Sports Shoes.",
+    "price": "897.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/FILA-Men-Sports-Shoes_f76566f76f49de0fdea5bedbe1c7db67_images.jpg",
+    "category": 17,
+    "stock": 33,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.071Z",
+    "updated_at": "2026-06-02T14:32:37.071Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 462,
+  "fields": {
+    "name": "Lee Cooper Men Black Sports Shoes",
+    "gender": "Men",
+    "slug": "lee-cooper-men-black-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Lee Cooper Men Black Sports Shoes.",
+    "price": "851.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/09edfdb4c1dc1478ea35507b0bdc41ce_images.jpg",
+    "category": 17,
+    "stock": 37,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.077Z",
+    "updated_at": "2026-06-02T14:32:37.077Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 463,
+  "fields": {
+    "name": "ADIDAS Men Sports White Sports Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-sports-white-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. ADIDAS Men Sports White Sports Shoes.",
+    "price": "1335.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/81780f9a8eebc7fb3d57ffffa7f455ae_images.jpg",
+    "category": 17,
+    "stock": 21,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.084Z",
+    "updated_at": "2026-06-02T14:32:37.084Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 464,
+  "fields": {
+    "name": "Puma Men Axis XT Black Shoes",
+    "gender": "Men",
+    "slug": "puma-men-axis-xt-black-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Puma Men Axis XT Black Shoes.",
+    "price": "651.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/70ffebcb332030e98e65461076ac2fb0_images.jpg",
+    "category": 17,
+    "stock": 37,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.090Z",
+    "updated_at": "2026-06-02T14:32:37.090Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 465,
+  "fields": {
+    "name": "Puma Men Black Aquil II Sports Shoes",
+    "gender": "Men",
+    "slug": "puma-men-black-aquil-ii-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Puma Men Black Aquil II Sports Shoes.",
+    "price": "822.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/39cef2982137215d71ed41a558159659_images.jpg",
+    "category": 17,
+    "stock": 17,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.096Z",
+    "updated_at": "2026-06-02T14:32:37.096Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 466,
+  "fields": {
+    "name": "Kalenji Ekiden Comfort Prime 2011",
+    "gender": "Men",
+    "slug": "kalenji-ekiden-comfort-prime-2011",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Kalenji Ekiden Comfort Prime 2011.",
+    "price": "920.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/07932c2277eda49d29639f0fe3c4e4c6_images.jpg",
+    "category": 17,
+    "stock": 10,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.102Z",
+    "updated_at": "2026-06-02T14:32:37.102Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 467,
+  "fields": {
+    "name": "Puma Men Future Cat Remix SF White Sports Shoes",
+    "gender": "Men",
+    "slug": "puma-men-future-cat-remix-sf-white-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Puma Men Future Cat Remix SF White Sports Shoes.",
+    "price": "720.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/b1d9e4498de202e29570bd08090f26a9_images.jpg",
+    "category": 17,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.108Z",
+    "updated_at": "2026-06-02T14:32:37.108Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 468,
+  "fields": {
+    "name": "F Sports Men Black Pace Sports Shoes",
+    "gender": "Men",
+    "slug": "f-sports-men-black-pace-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. F Sports Men Black Pace Sports Shoes.",
+    "price": "720.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/F-Sports-Men-Black-Pace-Sports-Shoes_564a9fd92f55538cafab82567a7fbce3_images.jpg",
+    "category": 17,
+    "stock": 21,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.114Z",
+    "updated_at": "2026-06-02T14:32:37.114Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 469,
+  "fields": {
+    "name": "Puma Men's Faas Blue White Silver Red Shoe",
+    "gender": "Men",
+    "slug": "puma-mens-faas-blue-white-silver-red-shoe",
+    "description": "Sports Shoes pour Men. Couleur : Blue. Style : Sports. Puma Men's Faas Blue White Silver Red Shoe.",
+    "price": "596.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/0411da3a022ade1d11dfb7affdc6f536_images.jpg",
+    "category": 17,
+    "stock": 32,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.120Z",
+    "updated_at": "2026-06-02T14:32:37.120Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 470,
+  "fields": {
+    "name": "Lotto Men Basketball Mid White Sports Shoe",
+    "gender": "Men",
+    "slug": "lotto-men-basketball-mid-white-sports-shoe",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Lotto Men Basketball Mid White Sports Shoe.",
+    "price": "585.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/95dd8b87ceff0247a70579ba850c0164_images.jpg",
+    "category": 17,
+    "stock": 6,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.127Z",
+    "updated_at": "2026-06-02T14:32:37.127Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 471,
+  "fields": {
+    "name": "Nike Men Lunarswift+ 3 Shield Grey Sports Shoes",
+    "gender": "Men",
+    "slug": "nike-men-lunarswift-3-shield-grey-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Grey. Style : Sports. Nike Men Lunarswift+ 3 Shield Grey Sports Shoes.",
+    "price": "686.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/9854a566783e31b6172f1deab77281fa_images.jpg",
+    "category": 17,
+    "stock": 40,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.132Z",
+    "updated_at": "2026-06-02T14:32:37.132Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 472,
+  "fields": {
+    "name": "Nike Men's Lunarswift Black Shoe",
+    "gender": "Men",
+    "slug": "nike-mens-lunarswift-black-shoe",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Nike Men's Lunarswift Black Shoe.",
+    "price": "771.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/f23c4d59eb6ca3cd621c3db690e0c708_images.jpg",
+    "category": 17,
+    "stock": 28,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.137Z",
+    "updated_at": "2026-06-02T14:32:37.137Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 473,
+  "fields": {
+    "name": "Fila Men Glow White Sports Shoes",
+    "gender": "Men",
+    "slug": "fila-men-glow-white-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Fila Men Glow White Sports Shoes.",
+    "price": "527.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/ab1fe16c66350052ecb0ade9502ebcca_images.jpg",
+    "category": 17,
+    "stock": 31,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.144Z",
+    "updated_at": "2026-06-02T14:32:37.144Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 474,
+  "fields": {
+    "name": "Nike Men Zoom Structure White Sports Shoes",
+    "gender": "Men",
+    "slug": "nike-men-zoom-structure-white-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Nike Men Zoom Structure White Sports Shoes.",
+    "price": "1102.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/03024db69975ad4be6f33eb928e08f96_images.jpg",
+    "category": 17,
+    "stock": 35,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.149Z",
+    "updated_at": "2026-06-02T14:32:37.150Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 475,
+  "fields": {
+    "name": "Reebok Men Sprintfit Lite Black Sports Shoe",
+    "gender": "Men",
+    "slug": "reebok-men-sprintfit-lite-black-sports-shoe",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Reebok Men Sprintfit Lite Black Sports Shoe.",
+    "price": "603.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/b4a93449c1fd4666bf2572c3d8d9763d_images.jpg",
+    "category": 17,
+    "stock": 9,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.157Z",
+    "updated_at": "2026-06-02T14:32:37.157Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 476,
+  "fields": {
+    "name": "Nike Men The Overplay VII Black Sports Shoes",
+    "gender": "Men",
+    "slug": "nike-men-the-overplay-vii-black-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Nike Men The Overplay VII Black Sports Shoes.",
+    "price": "1150.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/0834f6ae67b7891d53e9a0d612a6fe46_images.jpg",
+    "category": 17,
+    "stock": 1,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.164Z",
+    "updated_at": "2026-06-02T14:32:37.165Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 477,
+  "fields": {
+    "name": "ADIDAS Men Black Vanquish Sports Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-black-vanquish-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. ADIDAS Men Black Vanquish Sports Shoes.",
+    "price": "516.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/724a329e2ac5bcf1aadfc7fda484cba9_images.jpg",
+    "category": 17,
+    "stock": 4,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.171Z",
+    "updated_at": "2026-06-02T14:32:37.171Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 478,
+  "fields": {
+    "name": "ADIDAS Men Sports Blue Sports Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-sports-blue-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Blue. Style : Sports. ADIDAS Men Sports Blue Sports Shoes.",
+    "price": "831.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/3a9f62b28cc78e42ffc030e179f8a438_images.jpg",
+    "category": 17,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.176Z",
+    "updated_at": "2026-06-02T14:32:37.176Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 479,
+  "fields": {
+    "name": "ADIDAS Men's Boris White Shoe",
+    "gender": "Men",
+    "slug": "adidas-mens-boris-white-shoe",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. ADIDAS Men's Boris White Shoe.",
+    "price": "890.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/2aacd81da075c8d9cb891276bd9dbc9e_images.jpg",
+    "category": 17,
+    "stock": 9,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.181Z",
+    "updated_at": "2026-06-02T14:32:37.181Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 480,
+  "fields": {
+    "name": "ADIDAS Men White Duramo 3 Sports Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-white-duramo-3-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. ADIDAS Men White Duramo 3 Sports Shoes.",
+    "price": "718.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/8b1c19f33a7ab230c7b37aa9e6996f71_images.jpg",
+    "category": 17,
+    "stock": 37,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.187Z",
+    "updated_at": "2026-06-02T14:32:37.187Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 481,
+  "fields": {
+    "name": "Fila Men Glow Black Sports Shoes",
+    "gender": "Men",
+    "slug": "fila-men-glow-black-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Fila Men Glow Black Sports Shoes.",
+    "price": "413.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/4bfce78151c396213aa4ce1ad204468b_images.jpg",
+    "category": 17,
+    "stock": 14,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.193Z",
+    "updated_at": "2026-06-02T14:32:37.193Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 482,
+  "fields": {
+    "name": "Nike Men Air Quick Handle Red Sports Shoe",
+    "gender": "Men",
+    "slug": "nike-men-air-quick-handle-red-sports-shoe",
+    "description": "Sports Shoes pour Men. Couleur : Red. Style : Sports. Nike Men Air Quick Handle Red Sports Shoe.",
+    "price": "1461.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/c481346a8ed1ce44ec54b459af7de08a_images.jpg",
+    "category": 17,
+    "stock": 11,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.200Z",
+    "updated_at": "2026-06-02T14:32:37.200Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 483,
+  "fields": {
+    "name": "Nike Men's Air Max Moto White Blue Shoe",
+    "gender": "Men",
+    "slug": "nike-mens-air-max-moto-white-blue-shoe",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Nike Men's Air Max Moto White Blue Shoe.",
+    "price": "1422.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/538e095d6e2d1fe70731f5a14c154f2a_images.jpg",
+    "category": 17,
+    "stock": 37,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.206Z",
+    "updated_at": "2026-06-02T14:32:37.206Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 484,
+  "fields": {
+    "name": "ADIDAS Men White Aztek Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-white-aztek-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. ADIDAS Men White Aztek Shoes.",
+    "price": "590.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/37fafc79943235067c410fe05217e8d3_images.jpg",
+    "category": 17,
+    "stock": 31,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.213Z",
+    "updated_at": "2026-06-02T14:32:37.213Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 485,
+  "fields": {
+    "name": "Nike Men White T-Lite 9 SL Shoes",
+    "gender": "Men",
+    "slug": "nike-men-white-t-lite-9-sl-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Nike Men White T-Lite 9 SL Shoes.",
+    "price": "763.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/c0a8afcb96adb60a55fcb4748bd21364_images.jpg",
+    "category": 17,
+    "stock": 19,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.220Z",
+    "updated_at": "2026-06-02T14:32:37.220Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 486,
+  "fields": {
+    "name": "Nike Men Free Run+ 2 Black Sports Shoes",
+    "gender": "Men",
+    "slug": "nike-men-free-run-2-black-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Nike Men Free Run+ 2 Black Sports Shoes.",
+    "price": "675.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/45e5d30d4486c3569cb89dab80ed0c66_images.jpg",
+    "category": 17,
+    "stock": 23,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.225Z",
+    "updated_at": "2026-06-02T14:32:37.225Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 487,
+  "fields": {
+    "name": "Reebok Men's Easytone Inspire White Shoe",
+    "gender": "Men",
+    "slug": "reebok-mens-easytone-inspire-white-shoe",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Reebok Men's Easytone Inspire White Shoe.",
+    "price": "606.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/461d2320504d9d9f1cbe2ebfd6ac7aae_images.jpg",
+    "category": 17,
+    "stock": 15,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.232Z",
+    "updated_at": "2026-06-02T14:32:37.232Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 488,
+  "fields": {
+    "name": "ADIDAS Men's Canon Dialect Blue Yellow Shoe",
+    "gender": "Men",
+    "slug": "adidas-mens-canon-dialect-blue-yellow-shoe",
+    "description": "Sports Shoes pour Men. Couleur : Blue. Style : Sports. ADIDAS Men's Canon Dialect Blue Yellow Shoe.",
+    "price": "516.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/b8d8c3d8ce77c3ffbeac1bd5ab06b450_images.jpg",
+    "category": 17,
+    "stock": 40,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.239Z",
+    "updated_at": "2026-06-02T14:32:37.239Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 489,
+  "fields": {
+    "name": "Puma Men's Tarun White Silver Red Shoe",
+    "gender": "Men",
+    "slug": "puma-mens-tarun-white-silver-red-shoe",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Puma Men's Tarun White Silver Red Shoe.",
+    "price": "638.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/25cffc1cddbfbc2ae8c8a98ee2431665_images.jpg",
+    "category": 17,
+    "stock": 5,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.247Z",
+    "updated_at": "2026-06-02T14:32:37.247Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 490,
+  "fields": {
+    "name": "ADIDAS Men Snova Glide Blue Sports Shoes",
+    "gender": "Men",
+    "slug": "adidas-men-snova-glide-blue-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Blue. Style : Sports. ADIDAS Men Snova Glide Blue Sports Shoes.",
+    "price": "1422.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/af829e3d805b3f99f3905431c425796d_images.jpg",
+    "category": 17,
+    "stock": 25,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.255Z",
+    "updated_at": "2026-06-02T14:32:37.255Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 491,
+  "fields": {
+    "name": "Force 10 Men Black & Green Sports Shoes",
+    "gender": "Men",
+    "slug": "force-10-men-black-green-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Force 10 Men Black & Green Sports Shoes.",
+    "price": "1263.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/82a96a5a66ccb900ef4ab90c095baf02_images.jpg",
+    "category": 17,
+    "stock": 9,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.261Z",
+    "updated_at": "2026-06-02T14:32:37.261Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 492,
+  "fields": {
+    "name": "Nike Men Air Impetus II White Sports Shoe",
+    "gender": "Men",
+    "slug": "nike-men-air-impetus-ii-white-sports-shoe",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Nike Men Air Impetus II White Sports Shoe.",
+    "price": "1419.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/d30175afac8812e0b52c4fb7cc8aa0ee_images.jpg",
+    "category": 17,
+    "stock": 19,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.269Z",
+    "updated_at": "2026-06-02T14:32:37.269Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 493,
+  "fields": {
+    "name": "Nike Men Tiempo Natural IV Black Sports Shoes",
+    "gender": "Men",
+    "slug": "nike-men-tiempo-natural-iv-black-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. Nike Men Tiempo Natural IV Black Sports Shoes.",
+    "price": "948.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/d286cac0d47d4dec862b8adabbab6ceb_images.jpg",
+    "category": 17,
+    "stock": 24,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.279Z",
+    "updated_at": "2026-06-02T14:32:37.279Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 494,
+  "fields": {
+    "name": "ADIDAS Men's Boris Black Shoe",
+    "gender": "Men",
+    "slug": "adidas-mens-boris-black-shoe",
+    "description": "Sports Shoes pour Men. Couleur : Black. Style : Sports. ADIDAS Men's Boris Black Shoe.",
+    "price": "663.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/2e0f915b21422d3685efaaaca1248707_images.jpg",
+    "category": 17,
+    "stock": 13,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.287Z",
+    "updated_at": "2026-06-02T14:32:37.287Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 495,
+  "fields": {
+    "name": "Nike Men Air Relentness Grey Sports Shoes",
+    "gender": "Men",
+    "slug": "nike-men-air-relentness-grey-sports-shoes",
+    "description": "Sports Shoes pour Men. Couleur : Grey. Style : Sports. Nike Men Air Relentness Grey Sports Shoes.",
+    "price": "1420.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/eaf8f7339bfa5a6a5375491df92fcba4_images.jpg",
+    "category": 17,
+    "stock": 25,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.294Z",
+    "updated_at": "2026-06-02T14:32:37.294Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 496,
+  "fields": {
+    "name": "Nike Men's Air Citius MSL White Grey Shoe",
+    "gender": "Men",
+    "slug": "nike-mens-air-citius-msl-white-grey-shoe",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Nike Men's Air Citius MSL White Grey Shoe.",
+    "price": "880.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/baffde85f36e72580d7246b0952ee688_images.jpg",
+    "category": 17,
+    "stock": 18,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.302Z",
+    "updated_at": "2026-06-02T14:32:37.302Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 497,
+  "fields": {
+    "name": "Nike Men White Court Shuttle Shoes",
+    "gender": "Men",
+    "slug": "nike-men-white-court-shuttle-shoes",
+    "description": "Sports Shoes pour Men. Couleur : White. Style : Sports. Nike Men White Court Shuttle Shoes.",
+    "price": "1244.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/1038ce9f7220f629cf068d34e286de8c_images.jpg",
+    "category": 17,
+    "stock": 12,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.308Z",
+    "updated_at": "2026-06-02T14:32:37.308Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 498,
+  "fields": {
+    "name": "Carlton London Women Black & Gold Toned Flats",
+    "gender": "Women",
+    "slug": "carlton-london-women-black-gold-toned-flats",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Carlton London Women Black & Gold Toned Flats.",
+    "price": "332.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Carlton-London-Women-Black-Gladiator-Sandals_b8f695202ccc1889f65d57b4000a888f_images.jpg",
+    "category": 18,
+    "stock": 9,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.322Z",
+    "updated_at": "2026-06-02T14:32:37.322Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 499,
+  "fields": {
+    "name": "Catwalk Women Leather Brown Flats",
+    "gender": "Women",
+    "slug": "catwalk-women-leather-brown-flats",
+    "description": "Flats pour Women. Couleur : Brown. Style : Casual. Catwalk Women Leather Brown Flats.",
+    "price": "487.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/94a9deea53125663d9bbe61cb38b84b4_images.jpg",
+    "category": 18,
+    "stock": 28,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.330Z",
+    "updated_at": "2026-06-02T14:32:37.330Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 500,
+  "fields": {
+    "name": "Carlton London Women Silver Wedge Sandal",
+    "gender": "Women",
+    "slug": "carlton-london-women-silver-wedge-sandal",
+    "description": "Flats pour Women. Couleur : Silver. Style : Casual. Carlton London Women Silver Wedge Sandal.",
+    "price": "682.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/1133e704c0d02e19ac7b09685788aa40_images.jpg",
+    "category": 18,
+    "stock": 40,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.336Z",
+    "updated_at": "2026-06-02T14:32:37.336Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 501,
+  "fields": {
+    "name": "Portia Women Copper-Toned & Brown Sandals",
+    "gender": "Women",
+    "slug": "portia-women-copper-toned-brown-sandals",
+    "description": "Flats pour Women. Couleur : Copper. Style : Casual. Portia Women Copper-Toned & Brown Sandals.",
+    "price": "314.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/daadf44edb9420bbd0d335702cf6e095_images.jpg",
+    "category": 18,
+    "stock": 17,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.343Z",
+    "updated_at": "2026-06-02T14:32:37.343Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 502,
+  "fields": {
+    "name": "Catwalk Women Brown Sandals",
+    "gender": "Women",
+    "slug": "catwalk-women-brown-sandals",
+    "description": "Flats pour Women. Couleur : Brown. Style : Casual. Catwalk Women Brown Sandals.",
+    "price": "348.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Catwalk-Women-Brown-Sandals_c094f60d90c695681a6b79cf241777fc_images.jpg",
+    "category": 18,
+    "stock": 1,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.350Z",
+    "updated_at": "2026-06-02T14:32:37.350Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 503,
+  "fields": {
+    "name": "Inc 5 Women Brown Heels",
+    "gender": "Women",
+    "slug": "inc-5-women-brown-heels",
+    "description": "Flats pour Women. Couleur : Brown. Style : Casual. Inc 5 Women Brown Heels.",
+    "price": "541.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/be1fc833328c2708141568e2476abe81_images.jpg",
+    "category": 18,
+    "stock": 36,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.357Z",
+    "updated_at": "2026-06-02T14:32:37.357Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 504,
+  "fields": {
+    "name": "Rocia Women Copper Sandals",
+    "gender": "Women",
+    "slug": "rocia-women-copper-sandals",
+    "description": "Flats pour Women. Couleur : Copper. Style : Casual. Rocia Women Copper Sandals.",
+    "price": "724.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/93455095a8c1bc951c7bd258b600dfa1_images.jpg",
+    "category": 18,
+    "stock": 20,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.365Z",
+    "updated_at": "2026-06-02T14:32:37.365Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 505,
+  "fields": {
+    "name": "Carlton London Women Wedge Silver Sandal",
+    "gender": "Women",
+    "slug": "carlton-london-women-wedge-silver-sandal",
+    "description": "Flats pour Women. Couleur : Silver. Style : Casual. Carlton London Women Wedge Silver Sandal.",
+    "price": "675.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/a2a3d03e64b5041ab052d5a6b10d282a_images.jpg",
+    "category": 18,
+    "stock": 14,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.373Z",
+    "updated_at": "2026-06-02T14:32:37.373Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 506,
+  "fields": {
+    "name": "Puma Women Grace Silver Sandals",
+    "gender": "Women",
+    "slug": "puma-women-grace-silver-sandals",
+    "description": "Flats pour Women. Couleur : Silver. Style : Casual. Puma Women Grace Silver Sandals.",
+    "price": "769.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/f8bdfe085e37908f16bd5a9f16660748_images.jpg",
+    "category": 18,
+    "stock": 16,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.381Z",
+    "updated_at": "2026-06-02T14:32:37.381Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 507,
+  "fields": {
+    "name": "Rocia Women Black & Brown Sandals",
+    "gender": "Women",
+    "slug": "rocia-women-black-brown-sandals",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Rocia Women Black & Brown Sandals.",
+    "price": "371.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/54af17814bd8787468092abb74e7636a_images.jpg",
+    "category": 18,
+    "stock": 37,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.388Z",
+    "updated_at": "2026-06-02T14:32:37.388Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 508,
+  "fields": {
+    "name": "Inc 5 Women Casual Maroon Sandals",
+    "gender": "Women",
+    "slug": "inc-5-women-casual-maroon-sandals",
+    "description": "Flats pour Women. Couleur : Maroon. Style : Casual. Inc 5 Women Casual Maroon Sandals.",
+    "price": "344.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/32d7552ec969da21fa44144d0feacd1b_images.jpg",
+    "category": 18,
+    "stock": 26,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.396Z",
+    "updated_at": "2026-06-02T14:32:37.396Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 509,
+  "fields": {
+    "name": "Catwalk Women Brown Sandals",
+    "gender": "Women",
+    "slug": "catwalk-women-brown-sandals-1",
+    "description": "Flats pour Women. Couleur : Brown. Style : Casual. Catwalk Women Brown Sandals.",
+    "price": "234.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/8e313b831ecb312d445cb49176d23b8f_images.jpg",
+    "category": 18,
+    "stock": 26,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.404Z",
+    "updated_at": "2026-06-02T14:32:37.404Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 510,
+  "fields": {
+    "name": "Portia Women Brown Flats",
+    "gender": "Women",
+    "slug": "portia-women-brown-flats",
+    "description": "Flats pour Women. Couleur : Brown. Style : Casual. Portia Women Brown Flats.",
+    "price": "309.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/850fe0b3abd042bd9af245d22f884528_images.jpg",
+    "category": 18,
+    "stock": 3,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.411Z",
+    "updated_at": "2026-06-02T14:32:37.411Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 511,
+  "fields": {
+    "name": "Rocia Women Beige Flats",
+    "gender": "Women",
+    "slug": "rocia-women-beige-flats",
+    "description": "Flats pour Women. Couleur : Beige. Style : Casual. Rocia Women Beige Flats.",
+    "price": "521.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/24f753782c9608794f668bb11e121a37_images.jpg",
+    "category": 18,
+    "stock": 34,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.421Z",
+    "updated_at": "2026-06-02T14:32:37.421Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 512,
+  "fields": {
+    "name": "Carlton London Women Four Strapped Black Sandal",
+    "gender": "Women",
+    "slug": "carlton-london-women-four-strapped-black-sandal",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Carlton London Women Four Strapped Black Sandal.",
+    "price": "592.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/3c1282e51eb6c43ff789db59376f9c02_images.jpg",
+    "category": 18,
+    "stock": 32,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.428Z",
+    "updated_at": "2026-06-02T14:32:37.428Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 513,
+  "fields": {
+    "name": "Catwalk Women Blue Casual Flats",
+    "gender": "Women",
+    "slug": "catwalk-women-blue-casual-flats",
+    "description": "Flats pour Women. Couleur : Blue. Style : Casual. Catwalk Women Blue Casual Flats.",
+    "price": "445.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/1dbabb93c7e0219a6ef095bb9317990b_images.jpg",
+    "category": 18,
+    "stock": 9,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.436Z",
+    "updated_at": "2026-06-02T14:32:37.436Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 514,
+  "fields": {
+    "name": "Carlton London Women Gold Wedge Sandal",
+    "gender": "Women",
+    "slug": "carlton-london-women-gold-wedge-sandal",
+    "description": "Flats pour Women. Couleur : Gold. Style : Sports. Carlton London Women Gold Wedge Sandal.",
+    "price": "679.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/9dc47ec74ce6e5a62d67cbcdbd89898d_images.jpg",
+    "category": 18,
+    "stock": 1,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.444Z",
+    "updated_at": "2026-06-02T14:32:37.444Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 515,
+  "fields": {
+    "name": "Catwalk Women Bronze toned Sandals",
+    "gender": "Women",
+    "slug": "catwalk-women-bronze-toned-sandals",
+    "description": "Flats pour Women. Couleur : Bronze. Style : Casual. Catwalk Women Bronze toned Sandals.",
+    "price": "451.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Catwalk-Women-Casual-Brown-Sandals_59455438ca287eef7a3bffc3ee185dae_images.jpg",
+    "category": 18,
+    "stock": 3,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.453Z",
+    "updated_at": "2026-06-02T14:32:37.453Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 516,
+  "fields": {
+    "name": "Reebok Women Black Casual Shoes",
+    "gender": "Women",
+    "slug": "reebok-women-black-casual-shoes",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Reebok Women Black Casual Shoes.",
+    "price": "332.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/a15c48c3e83270df6c47a1f3bc40481b_images.jpg",
+    "category": 18,
+    "stock": 3,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.460Z",
+    "updated_at": "2026-06-02T14:32:37.460Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 517,
+  "fields": {
+    "name": "Rocia Women Maroon Sandals",
+    "gender": "Women",
+    "slug": "rocia-women-maroon-sandals",
+    "description": "Flats pour Women. Couleur : Maroon. Style : Casual. Rocia Women Maroon Sandals.",
+    "price": "561.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/40fe64867f1f024c161b7f99ec89492f_images.jpg",
+    "category": 18,
+    "stock": 34,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.468Z",
+    "updated_at": "2026-06-02T14:32:37.468Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 518,
+  "fields": {
+    "name": "Portia Women White Flats",
+    "gender": "Women",
+    "slug": "portia-women-white-flats",
+    "description": "Flats pour Women. Couleur : White. Style : Casual. Portia Women White Flats.",
+    "price": "503.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/efcdd282e627cfc454c18574a5c92bf0_images.jpg",
+    "category": 18,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.476Z",
+    "updated_at": "2026-06-02T14:32:37.476Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 519,
+  "fields": {
+    "name": "Rocia Women Brown Sandals",
+    "gender": "Women",
+    "slug": "rocia-women-brown-sandals",
+    "description": "Flats pour Women. Couleur : Brown. Style : Casual. Rocia Women Brown Sandals.",
+    "price": "246.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/5063cda2d8e629f4936f0a879f8b8d7b_images.jpg",
+    "category": 18,
+    "stock": 5,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.483Z",
+    "updated_at": "2026-06-02T14:32:37.483Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 520,
+  "fields": {
+    "name": "Enroute Women Black Shoes",
+    "gender": "Women",
+    "slug": "enroute-women-black-shoes",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Enroute Women Black Shoes.",
+    "price": "501.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/35b7eb39a80600b68e50f9e409b5c053_images.jpg",
+    "category": 18,
+    "stock": 17,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.492Z",
+    "updated_at": "2026-06-02T14:32:37.492Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 521,
+  "fields": {
+    "name": "Catwalk Women Lifestyle Gold Toned Ballerinas",
+    "gender": "Women",
+    "slug": "catwalk-women-lifestyle-gold-toned-ballerinas",
+    "description": "Flats pour Women. Couleur : Gold. Style : Casual. Catwalk Women Lifestyle Gold Toned Ballerinas.",
+    "price": "345.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/09f49fced9f3a34e970cca2e5023d775_images.jpg",
+    "category": 18,
+    "stock": 28,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.501Z",
+    "updated_at": "2026-06-02T14:32:37.501Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 522,
+  "fields": {
+    "name": "Rocia Women Black & Brown Flats",
+    "gender": "Women",
+    "slug": "rocia-women-black-brown-flats",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Rocia Women Black & Brown Flats.",
+    "price": "664.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Rocia-Women-Black---Brown-Flats_8cf9dbde80372cebd510a6d166be4272_images.jpg",
+    "category": 18,
+    "stock": 34,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.509Z",
+    "updated_at": "2026-06-02T14:32:37.510Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 523,
+  "fields": {
+    "name": "Portia Women Black Flats",
+    "gender": "Women",
+    "slug": "portia-women-black-flats",
+    "description": "Flats pour Women. Couleur : Brown. Style : Casual. Portia Women Black Flats.",
+    "price": "728.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/3be71d4422b473a751afeb01be92a050_images.jpg",
+    "category": 18,
+    "stock": 15,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.517Z",
+    "updated_at": "2026-06-02T14:32:37.517Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 524,
+  "fields": {
+    "name": "Rocia Women Multi- Coloured Shoes",
+    "gender": "Women",
+    "slug": "rocia-women-multi-coloured-shoes",
+    "description": "Flats pour Women. Couleur : Green. Style : Casual. Rocia Women Multi- Coloured Shoes.",
+    "price": "450.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/aac4ddede8d0c5c6763ba65718f41f53_images.jpg",
+    "category": 18,
+    "stock": 16,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.524Z",
+    "updated_at": "2026-06-02T14:32:37.524Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 525,
+  "fields": {
+    "name": "Rocia Women Casual Brown Sandal",
+    "gender": "Women",
+    "slug": "rocia-women-casual-brown-sandal",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Rocia Women Casual Brown Sandal.",
+    "price": "247.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/89ecaa554ef5971e55812242be4559fe_images.jpg",
+    "category": 18,
+    "stock": 12,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.533Z",
+    "updated_at": "2026-06-02T14:32:37.533Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 526,
+  "fields": {
+    "name": "Skechers Women Tone Black Sandals",
+    "gender": "Women",
+    "slug": "skechers-women-tone-black-sandals",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Skechers Women Tone Black Sandals.",
+    "price": "790.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/5d26668b07d34a65677b9c6c4d82d822_images.jpg",
+    "category": 18,
+    "stock": 26,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.539Z",
+    "updated_at": "2026-06-02T14:32:37.539Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 527,
+  "fields": {
+    "name": "Rocia Women Brown Flats",
+    "gender": "Women",
+    "slug": "rocia-women-brown-flats",
+    "description": "Flats pour Women. Couleur : Brown. Style : Casual. Rocia Women Brown Flats.",
+    "price": "534.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/1c1abbca930c28db88190a7fb767246b_images.jpg",
+    "category": 18,
+    "stock": 28,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.547Z",
+    "updated_at": "2026-06-02T14:32:37.547Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 528,
+  "fields": {
+    "name": "Rocia Women Black Flats",
+    "gender": "Women",
+    "slug": "rocia-women-black-flats",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Rocia Women Black Flats.",
+    "price": "717.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/6afd5f6576cb3f66b170b56fcd248eaf_images.jpg",
+    "category": 18,
+    "stock": 1,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.556Z",
+    "updated_at": "2026-06-02T14:32:37.556Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 529,
+  "fields": {
+    "name": "Rocia Women Casual Black Sandal",
+    "gender": "Women",
+    "slug": "rocia-women-casual-black-sandal",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Rocia Women Casual Black Sandal.",
+    "price": "786.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/266a1f4e0c4148415bf09dc1f2b6fc87_images.jpg",
+    "category": 18,
+    "stock": 19,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.563Z",
+    "updated_at": "2026-06-02T14:32:37.563Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 530,
+  "fields": {
+    "name": "Puma Women Roque Grey Sandals",
+    "gender": "Women",
+    "slug": "puma-women-roque-grey-sandals",
+    "description": "Flats pour Women. Couleur : Grey. Style : Casual. Puma Women Roque Grey Sandals.",
+    "price": "728.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/2341afa6401c16203f3a0b9b4f850e62_images.jpg",
+    "category": 18,
+    "stock": 32,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.571Z",
+    "updated_at": "2026-06-02T14:32:37.571Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 531,
+  "fields": {
+    "name": "Carlton London Women Purple Flat Shoes",
+    "gender": "Women",
+    "slug": "carlton-london-women-purple-flat-shoes",
+    "description": "Flats pour Women. Couleur : Purple. Style : Casual. Carlton London Women Purple Flat Shoes.",
+    "price": "320.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Carlton-London-Women-Casual-Purple-Casual-Shoes_fd89203a7e0bd8dfc295b78a29b33ef8_images.jpg",
+    "category": 18,
+    "stock": 2,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.579Z",
+    "updated_at": "2026-06-02T14:32:37.579Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 532,
+  "fields": {
+    "name": "Rocia Women Casual Brown Sandal",
+    "gender": "Women",
+    "slug": "rocia-women-casual-brown-sandal-1",
+    "description": "Flats pour Women. Couleur : Brown. Style : Casual. Rocia Women Casual Brown Sandal.",
+    "price": "311.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/5495534f33a5f100dbff02a62b0c4352_images.jpg",
+    "category": 18,
+    "stock": 14,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.587Z",
+    "updated_at": "2026-06-02T14:32:37.587Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 533,
+  "fields": {
+    "name": "Rockport Women Beige Flats",
+    "gender": "Women",
+    "slug": "rockport-women-beige-flats",
+    "description": "Flats pour Women. Couleur : Off White. Style : Casual. Rockport Women Beige Flats.",
+    "price": "762.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/image/style/properties/17489/Rockport-Women-Casual-Off-White-Flats_1_32c908f3d211f8df31f35d1e87ebaf63.jpg",
+    "category": 18,
+    "stock": 8,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.594Z",
+    "updated_at": "2026-06-02T14:32:37.594Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 534,
+  "fields": {
+    "name": "Catwalk Women Beige Shoes",
+    "gender": "Women",
+    "slug": "catwalk-women-beige-shoes",
+    "description": "Flats pour Women. Couleur : Beige. Style : Casual. Catwalk Women Beige Shoes.",
+    "price": "258.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/a401f14b06a8768cd3c6d6ad1e6ae84e_images.jpg",
+    "category": 18,
+    "stock": 37,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.601Z",
+    "updated_at": "2026-06-02T14:32:37.601Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 535,
+  "fields": {
+    "name": "Portia Women Maroon Flats",
+    "gender": "Women",
+    "slug": "portia-women-maroon-flats",
+    "description": "Flats pour Women. Couleur : Maroon. Style : Casual. Portia Women Maroon Flats.",
+    "price": "257.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/20214916a1165a52e91e0ee83d380875_images.jpg",
+    "category": 18,
+    "stock": 14,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.609Z",
+    "updated_at": "2026-06-02T14:32:37.609Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 536,
+  "fields": {
+    "name": "Rocia Women Casual Black Heels",
+    "gender": "Women",
+    "slug": "rocia-women-casual-black-heels",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Rocia Women Casual Black Heels.",
+    "price": "447.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/c90e16c1d1f5c18264e34eb933e738e8_images.jpg",
+    "category": 18,
+    "stock": 12,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.616Z",
+    "updated_at": "2026-06-02T14:32:37.616Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 537,
+  "fields": {
+    "name": "Enroute Women Coral Shoes",
+    "gender": "Women",
+    "slug": "enroute-women-coral-shoes",
+    "description": "Flats pour Women. Couleur : Orange. Style : Casual. Enroute Women Coral Shoes.",
+    "price": "509.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/66805c5d16ee71ee428bb45419a1088f_images.jpg",
+    "category": 18,
+    "stock": 27,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.624Z",
+    "updated_at": "2026-06-02T14:32:37.624Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 538,
+  "fields": {
+    "name": "Catwalk Women Black Casual Flats",
+    "gender": "Women",
+    "slug": "catwalk-women-black-casual-flats",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Catwalk Women Black Casual Flats.",
+    "price": "427.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/39312317404b3e0a954cb669183af81f_images.jpg",
+    "category": 18,
+    "stock": 21,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.632Z",
+    "updated_at": "2026-06-02T14:32:37.632Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 539,
+  "fields": {
+    "name": "Rocia Women Black Sandals",
+    "gender": "Women",
+    "slug": "rocia-women-black-sandals",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Rocia Women Black Sandals.",
+    "price": "698.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/044aaa16f68a0b7ae3a6f4cd4da8fb2f_images.jpg",
+    "category": 18,
+    "stock": 19,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.639Z",
+    "updated_at": "2026-06-02T14:32:37.639Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 540,
+  "fields": {
+    "name": "Carlton London Women Four Strapped Gold Sandal",
+    "gender": "Women",
+    "slug": "carlton-london-women-four-strapped-gold-sandal",
+    "description": "Flats pour Women. Couleur : Gold. Style : Casual. Carlton London Women Four Strapped Gold Sandal.",
+    "price": "500.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/865a39d6f7e6d219f888220b452c7239_images.jpg",
+    "category": 18,
+    "stock": 6,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.646Z",
+    "updated_at": "2026-06-02T14:32:37.646Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 541,
+  "fields": {
+    "name": "Nike Women Black Tenkay Shoes",
+    "gender": "Women",
+    "slug": "nike-women-black-tenkay-shoes",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Nike Women Black Tenkay Shoes.",
+    "price": "562.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/7aec29a0a89d8916f17052917776d1d0_images.jpg",
+    "category": 18,
+    "stock": 1,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.653Z",
+    "updated_at": "2026-06-02T14:32:37.653Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 542,
+  "fields": {
+    "name": "Rocia Women Grey Sandals",
+    "gender": "Women",
+    "slug": "rocia-women-grey-sandals",
+    "description": "Flats pour Women. Couleur : Grey. Style : Casual. Rocia Women Grey Sandals.",
+    "price": "225.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/c8d0d5e36e47c6c3e71ed51ef1cc510e_images.jpg",
+    "category": 18,
+    "stock": 1,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.660Z",
+    "updated_at": "2026-06-02T14:32:37.660Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 543,
+  "fields": {
+    "name": "Reebok Women Navy Blue Casual Shoes",
+    "gender": "Women",
+    "slug": "reebok-women-navy-blue-casual-shoes",
+    "description": "Flats pour Women. Couleur : Navy Blue. Style : Casual. Reebok Women Navy Blue Casual Shoes.",
+    "price": "625.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/92ecdcf6484a10a8324dc2a40c9b2f80_images.jpg",
+    "category": 18,
+    "stock": 29,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.669Z",
+    "updated_at": "2026-06-02T14:32:37.669Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 544,
+  "fields": {
+    "name": "Rocia Women Beige & Brown Sandals",
+    "gender": "Women",
+    "slug": "rocia-women-beige-brown-sandals",
+    "description": "Flats pour Women. Couleur : Beige. Style : Casual. Rocia Women Beige & Brown Sandals.",
+    "price": "362.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/fccc4ca2fcce00803d7628ed5c259fbc_images.jpg",
+    "category": 18,
+    "stock": 29,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.678Z",
+    "updated_at": "2026-06-02T14:32:37.678Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 545,
+  "fields": {
+    "name": "ADIDAS Women Sweep Green Sandals",
+    "gender": "Women",
+    "slug": "adidas-women-sweep-green-sandals",
+    "description": "Flats pour Women. Couleur : Green. Style : Casual. ADIDAS Women Sweep Green Sandals.",
+    "price": "656.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/dbfad4b687f66fef421fd8f883d7227f_images.jpg",
+    "category": 18,
+    "stock": 10,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.687Z",
+    "updated_at": "2026-06-02T14:32:37.687Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 546,
+  "fields": {
+    "name": "Puma Women Black Grace Flats",
+    "gender": "Women",
+    "slug": "puma-women-black-grace-flats",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Puma Women Black Grace Flats.",
+    "price": "622.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Puma-Women-Grace-Black-Sandals_632d064a8a8ff4733d1389a9642a10a7_images.jpg",
+    "category": 18,
+    "stock": 17,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.695Z",
+    "updated_at": "2026-06-02T14:32:37.695Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 547,
+  "fields": {
+    "name": "Portia Women Black Flats",
+    "gender": "Women",
+    "slug": "portia-women-black-flats-1",
+    "description": "Flats pour Women. Couleur : Black. Style : Casual. Portia Women Black Flats.",
+    "price": "388.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/6f95f0cb9f9f6e5e6ed76db4cca1621a_images.jpg",
+    "category": 18,
+    "stock": 30,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.703Z",
+    "updated_at": "2026-06-02T14:32:37.703Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 548,
+  "fields": {
+    "name": "Rocia Women Black Flats",
+    "gender": "Women",
+    "slug": "rocia-women-black-flats-1",
+    "description": "Heels pour Women. Couleur : Black. Style : Casual. Rocia Women Black Flats.",
+    "price": "1186.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/8d6fd53f28e010658cdf5c14c43d0cb0_images.jpg",
+    "category": 19,
+    "stock": 40,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.719Z",
+    "updated_at": "2026-06-02T14:32:37.719Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 549,
+  "fields": {
+    "name": "Catwalk Women Leather Flats",
+    "gender": "Women",
+    "slug": "catwalk-women-leather-flats",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Catwalk Women Leather Flats.",
+    "price": "1099.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/4d90e05b9e99e203b3ce191439619bcb_images.jpg",
+    "category": 19,
+    "stock": 0,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.727Z",
+    "updated_at": "2026-06-02T14:32:37.727Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 550,
+  "fields": {
+    "name": "Catwalk Women Gun Metal Grey Heels",
+    "gender": "Women",
+    "slug": "catwalk-women-gun-metal-grey-heels",
+    "description": "Heels pour Women. Couleur : Grey. Style : Casual. Catwalk Women Gun Metal Grey Heels.",
+    "price": "326.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/cea14ca6ae7273963babfa80798aa61c_images.jpg",
+    "category": 19,
+    "stock": 14,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.736Z",
+    "updated_at": "2026-06-02T14:32:37.736Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 551,
+  "fields": {
+    "name": "Rocia Women Black Heels",
+    "gender": "Women",
+    "slug": "rocia-women-black-heels",
+    "description": "Heels pour Women. Couleur : Black. Style : Casual. Rocia Women Black Heels.",
+    "price": "597.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/50c7dd932d347768b05766e5dd231355_images.jpg",
+    "category": 19,
+    "stock": 28,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.744Z",
+    "updated_at": "2026-06-02T14:32:37.744Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 552,
+  "fields": {
+    "name": "Catwalk Women Golden Wedges",
+    "gender": "Women",
+    "slug": "catwalk-women-golden-wedges",
+    "description": "Heels pour Women. Couleur : Gold. Style : Casual. Catwalk Women Golden Wedges.",
+    "price": "725.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Catwalk-Women-Golden-Sandals_5fddd65067f3c7c0224439efc7a99ac8_images.jpg",
+    "category": 19,
+    "stock": 13,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.751Z",
+    "updated_at": "2026-06-02T14:32:37.751Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 553,
+  "fields": {
+    "name": "Enroute Women Casual Black Flats",
+    "gender": "Women",
+    "slug": "enroute-women-casual-black-flats",
+    "description": "Heels pour Women. Couleur : Black. Style : Casual. Enroute Women Casual Black Flats.",
+    "price": "846.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/33fe789a39b0590d649cd052e53b80b6_images.jpg",
+    "category": 19,
+    "stock": 1,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.759Z",
+    "updated_at": "2026-06-02T14:32:37.759Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 554,
+  "fields": {
+    "name": "Enroute Women Casual White Heels",
+    "gender": "Women",
+    "slug": "enroute-women-casual-white-heels",
+    "description": "Heels pour Women. Couleur : White. Style : Casual. Enroute Women Casual White Heels.",
+    "price": "983.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/749afc6258261f28bcd6b94c30f75cba_images.jpg",
+    "category": 19,
+    "stock": 33,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.768Z",
+    "updated_at": "2026-06-02T14:32:37.768Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 555,
+  "fields": {
+    "name": "Rocia Women Black Shoes",
+    "gender": "Women",
+    "slug": "rocia-women-black-shoes",
+    "description": "Heels pour Women. Couleur : Black. Style : Formal. Rocia Women Black Shoes.",
+    "price": "438.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/45f254c1992b0d9a55adf6c7c7f20ed8_images.jpg",
+    "category": 19,
+    "stock": 8,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.775Z",
+    "updated_at": "2026-06-02T14:32:37.775Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 556,
+  "fields": {
+    "name": "Catwalk Women Casual Black Heels",
+    "gender": "Women",
+    "slug": "catwalk-women-casual-black-heels",
+    "description": "Heels pour Women. Couleur : Black. Style : Casual. Catwalk Women Casual Black Heels.",
+    "price": "1139.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/dedbae54d5a67c52c6b08cb832f50622_images.jpg",
+    "category": 19,
+    "stock": 12,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.783Z",
+    "updated_at": "2026-06-02T14:32:37.783Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 557,
+  "fields": {
+    "name": "Catwalk Women Multi-coloured Heels",
+    "gender": "Women",
+    "slug": "catwalk-women-multi-coloured-heels",
+    "description": "Heels pour Women. Couleur : Multi. Style : Casual. Catwalk Women Multi-coloured Heels.",
+    "price": "819.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Catwalk-Women-Multi-coloured-Heels_be86b9c7d80ce88c557298beaad57be2_images.jpg",
+    "category": 19,
+    "stock": 22,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.790Z",
+    "updated_at": "2026-06-02T14:32:37.790Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 558,
+  "fields": {
+    "name": "Inc.5  Women Grey Flats",
+    "gender": "Women",
+    "slug": "inc5-women-grey-flats",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Inc.5  Women Grey Flats.",
+    "price": "1005.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Inc5-Women-Brown-Casual-Sandals_b942bed0e0fe8a1bdebfe77e8d6014db_images.jpg",
+    "category": 19,
+    "stock": 27,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.798Z",
+    "updated_at": "2026-06-02T14:32:37.798Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 559,
+  "fields": {
+    "name": "Rocia Women Beige Flats",
+    "gender": "Women",
+    "slug": "rocia-women-beige-flats-1",
+    "description": "Heels pour Women. Couleur : Beige. Style : Casual. Rocia Women Beige Flats.",
+    "price": "936.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/9f2acc54981dd59cff1ff4be9f0cc91f_images.jpg",
+    "category": 19,
+    "stock": 40,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.805Z",
+    "updated_at": "2026-06-02T14:32:37.805Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 560,
+  "fields": {
+    "name": "Rocia Women Brown Wedges",
+    "gender": "Women",
+    "slug": "rocia-women-brown-wedges",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Rocia Women Brown Wedges.",
+    "price": "312.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Rocia-Women-Brown-Sandals_3a40e00dee9152dc562fe36fca7553cc_images.jpg",
+    "category": 19,
+    "stock": 6,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.816Z",
+    "updated_at": "2026-06-02T14:32:37.816Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 561,
+  "fields": {
+    "name": "Catwalk Women Lifestyle Black Heels",
+    "gender": "Women",
+    "slug": "catwalk-women-lifestyle-black-heels",
+    "description": "Heels pour Women. Couleur : Black. Style : Casual. Catwalk Women Lifestyle Black Heels.",
+    "price": "1154.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/8dfd8801f1cdaa6b3a815f6f97f6dac7_images.jpg",
+    "category": 19,
+    "stock": 23,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.822Z",
+    "updated_at": "2026-06-02T14:32:37.822Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 562,
+  "fields": {
+    "name": "Enroute Women Turquoise Blue Flats",
+    "gender": "Women",
+    "slug": "enroute-women-turquoise-blue-flats",
+    "description": "Heels pour Women. Couleur : Turquoise Blue. Style : Casual. Enroute Women Turquoise Blue Flats.",
+    "price": "558.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/4a41f184d3e88f812dc257f20d9e4846_images.jpg",
+    "category": 19,
+    "stock": 8,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.829Z",
+    "updated_at": "2026-06-02T14:32:37.829Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 563,
+  "fields": {
+    "name": "Catwalk Women Red Flats",
+    "gender": "Women",
+    "slug": "catwalk-women-red-flats",
+    "description": "Heels pour Women. Couleur : Red. Style : Casual. Catwalk Women Red Flats.",
+    "price": "342.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/8c496e85f70eeb3c63e5a68fb1500f55_images.jpg",
+    "category": 19,
+    "stock": 40,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.837Z",
+    "updated_at": "2026-06-02T14:32:37.837Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 564,
+  "fields": {
+    "name": "Clarks Women Brown Leather Heels",
+    "gender": "Women",
+    "slug": "clarks-women-brown-leather-heels",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Clarks Women Brown Leather Heels.",
+    "price": "653.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Clarks-Women-Dolphin-Splash-Leather-Silver-Sandals_e55a6fa02cca3f6b6f3fa750619911d4_images.jpg",
+    "category": 19,
+    "stock": 9,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.843Z",
+    "updated_at": "2026-06-02T14:32:37.843Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 565,
+  "fields": {
+    "name": "Clarks Women Cream Coloured Onslow Beat Leather Wedges",
+    "gender": "Women",
+    "slug": "clarks-women-cream-coloured-onslow-beat-leather-wedges",
+    "description": "Heels pour Women. Couleur : Cream. Style : Casual. Clarks Women Cream Coloured Onslow Beat Leather Wedges.",
+    "price": "1149.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Clarks-Women-Cream-Coloured-Onslow-Beat-Leather-Wedges_d54ef67b1f4c7d4098230de69bc07b16_images.jpg",
+    "category": 19,
+    "stock": 39,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.851Z",
+    "updated_at": "2026-06-02T14:32:37.851Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 566,
+  "fields": {
+    "name": "Catwalk Women Wedding Heeled Bronze Heels",
+    "gender": "Women",
+    "slug": "catwalk-women-wedding-heeled-bronze-heels",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Catwalk Women Wedding Heeled Bronze Heels.",
+    "price": "601.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/099e8242ba7479b2eca56824293bbfb2_images.jpg",
+    "category": 19,
+    "stock": 16,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.858Z",
+    "updated_at": "2026-06-02T14:32:37.858Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 567,
+  "fields": {
+    "name": "Rockport Women Jeanie Oneband Brown Flats",
+    "gender": "Women",
+    "slug": "rockport-women-jeanie-oneband-brown-flats",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Rockport Women Jeanie Oneband Brown Flats.",
+    "price": "1024.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/206ca2bfdecb0cefc8785c43697feda1_images.jpg",
+    "category": 19,
+    "stock": 12,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.866Z",
+    "updated_at": "2026-06-02T14:32:37.866Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 568,
+  "fields": {
+    "name": "Rocia Women Maroon Sandals",
+    "gender": "Women",
+    "slug": "rocia-women-maroon-sandals-1",
+    "description": "Heels pour Women. Couleur : Maroon. Style : Casual. Rocia Women Maroon Sandals.",
+    "price": "722.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/6cf3168e7917dac9509f4a01ab3ad86d_images.jpg",
+    "category": 19,
+    "stock": 36,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.876Z",
+    "updated_at": "2026-06-02T14:32:37.876Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 569,
+  "fields": {
+    "name": "Catwalk Women Silver Flats",
+    "gender": "Women",
+    "slug": "catwalk-women-silver-flats",
+    "description": "Heels pour Women. Couleur : Silver. Style : Casual. Catwalk Women Silver Flats.",
+    "price": "597.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/e1fc1c55ab477c25864c495c536e30a8_images.jpg",
+    "category": 19,
+    "stock": 32,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.884Z",
+    "updated_at": "2026-06-02T14:32:37.884Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 570,
+  "fields": {
+    "name": "Catwalk Women Blue & White Sandals",
+    "gender": "Women",
+    "slug": "catwalk-women-blue-white-sandals",
+    "description": "Heels pour Women. Couleur : Blue. Style : Casual. Catwalk Women Blue & White Sandals.",
+    "price": "605.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/cb562c3a3872048ca5c6f54df98c815c_images.jpg",
+    "category": 19,
+    "stock": 8,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.891Z",
+    "updated_at": "2026-06-02T14:32:37.892Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 571,
+  "fields": {
+    "name": "Portia Women Brown Sandals",
+    "gender": "Women",
+    "slug": "portia-women-brown-sandals",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Portia Women Brown Sandals.",
+    "price": "948.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Portia-Women-Brown-Sandals_9166ae19bcc8714cf5ee6d198b6b6ac0_images.jpg",
+    "category": 19,
+    "stock": 1,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.900Z",
+    "updated_at": "2026-06-02T14:32:37.900Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 572,
+  "fields": {
+    "name": "Catwalk Women Bronze Heels",
+    "gender": "Women",
+    "slug": "catwalk-women-bronze-heels",
+    "description": "Heels pour Women. Couleur : Bronze. Style : Casual. Catwalk Women Bronze Heels.",
+    "price": "493.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/5bcda26c4c324bcbca51b16ff6f377e5_images.jpg",
+    "category": 19,
+    "stock": 34,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.909Z",
+    "updated_at": "2026-06-02T14:32:37.909Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 573,
+  "fields": {
+    "name": "Enroute Women Casual Yellow Heels",
+    "gender": "Women",
+    "slug": "enroute-women-casual-yellow-heels",
+    "description": "Heels pour Women. Couleur : Yellow. Style : Casual. Enroute Women Casual Yellow Heels.",
+    "price": "483.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/169f5d5f1c94f6ae8b51fe18e30cd86d_images.jpg",
+    "category": 19,
+    "stock": 30,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.917Z",
+    "updated_at": "2026-06-02T14:32:37.917Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 574,
+  "fields": {
+    "name": "Rocia Women Copper Flats",
+    "gender": "Women",
+    "slug": "rocia-women-copper-flats",
+    "description": "Heels pour Women. Couleur : Copper. Style : Casual. Rocia Women Copper Flats.",
+    "price": "503.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Rocia-Women-Copper-Sandals_9db3fcf4e551ffda644f052be7d5c4b2_images.jpg",
+    "category": 19,
+    "stock": 25,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.927Z",
+    "updated_at": "2026-06-02T14:32:37.927Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 575,
+  "fields": {
+    "name": "Clarks Women Black Onslow Beat Leather Wedges",
+    "gender": "Women",
+    "slug": "clarks-women-black-onslow-beat-leather-wedges",
+    "description": "Heels pour Women. Couleur : Black. Style : Casual. Clarks Women Black Onslow Beat Leather Wedges.",
+    "price": "579.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Clarks-Women-Black-Onslow-Beat-Leather-Wedges_47a35388dd38302fd2a81b21eb60399d_images.jpg",
+    "category": 19,
+    "stock": 28,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.937Z",
+    "updated_at": "2026-06-02T14:32:37.937Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 576,
+  "fields": {
+    "name": "Catwalk Women Brown Wedges",
+    "gender": "Women",
+    "slug": "catwalk-women-brown-wedges",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Catwalk Women Brown Wedges.",
+    "price": "428.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/7ff58c3f7c1e8b1b7966cc4600c6c38a_images.jpg",
+    "category": 19,
+    "stock": 23,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.947Z",
+    "updated_at": "2026-06-02T14:32:37.947Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 577,
+  "fields": {
+    "name": "Catwalk Women Brown Heels",
+    "gender": "Women",
+    "slug": "catwalk-women-brown-heels",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Catwalk Women Brown Heels.",
+    "price": "689.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/0858c71bc7adc664325643bf8bf8639f_images.jpg",
+    "category": 19,
+    "stock": 28,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.956Z",
+    "updated_at": "2026-06-02T14:32:37.956Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 578,
+  "fields": {
+    "name": "Rocia Women Brown Wedges",
+    "gender": "Women",
+    "slug": "rocia-women-brown-wedges-1",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Rocia Women Brown Wedges.",
+    "price": "1136.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Rocia-Women-Brown-Sandals_2f5eb8becdac0a5fe7238acde097614e_images.jpg",
+    "category": 19,
+    "stock": 22,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.966Z",
+    "updated_at": "2026-06-02T14:32:37.966Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 579,
+  "fields": {
+    "name": "Carlton London Women Stylish Gold Flats",
+    "gender": "Women",
+    "slug": "carlton-london-women-stylish-gold-flats",
+    "description": "Heels pour Women. Couleur : Gold. Style : Casual. Carlton London Women Stylish Gold Flats.",
+    "price": "726.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/aa9703a664cfc1493cc14a0eab2af64b_images.jpg",
+    "category": 19,
+    "stock": 18,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.973Z",
+    "updated_at": "2026-06-02T14:32:37.973Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 580,
+  "fields": {
+    "name": "HM Women Silver Heels",
+    "gender": "Women",
+    "slug": "hm-women-silver-heels",
+    "description": "Heels pour Women. Couleur : Silver. Style : Casual. HM Women Silver Heels.",
+    "price": "1115.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/HM-Women-Silver-Sandals_ee76b1f1e0e757625ad45e872068b6f4_images.jpg",
+    "category": 19,
+    "stock": 35,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.982Z",
+    "updated_at": "2026-06-02T14:32:37.982Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 581,
+  "fields": {
+    "name": "Catwalk Women Heeded Golden Strap Black Heels",
+    "gender": "Women",
+    "slug": "catwalk-women-heeded-golden-strap-black-heels",
+    "description": "Heels pour Women. Couleur : Gold. Style : Casual. Catwalk Women Heeded Golden Strap Black Heels.",
+    "price": "726.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/33297561a7540d13c77164a3bbe276e4_images.jpg",
+    "category": 19,
+    "stock": 36,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.990Z",
+    "updated_at": "2026-06-02T14:32:37.990Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 582,
+  "fields": {
+    "name": "Rocia Women Brown Heels",
+    "gender": "Women",
+    "slug": "rocia-women-brown-heels",
+    "description": "Heels pour Women. Couleur : Brown. Style : Formal. Rocia Women Brown Heels.",
+    "price": "848.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/60e3d082318b4e95c6f070746e0bbe5d_images.jpg",
+    "category": 19,
+    "stock": 22,
+    "available": true,
+    "created_at": "2026-06-02T14:32:37.998Z",
+    "updated_at": "2026-06-02T14:32:37.998Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 583,
+  "fields": {
+    "name": "Rocia Women Brown Flats",
+    "gender": "Women",
+    "slug": "rocia-women-brown-flats-1",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Rocia Women Brown Flats.",
+    "price": "840.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Rocia-Women-Brown-Sandals_ecbfd31801ed7f8daffc1fcecb3f94f1_images.jpg",
+    "category": 19,
+    "stock": 15,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.008Z",
+    "updated_at": "2026-06-02T14:32:38.008Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 584,
+  "fields": {
+    "name": "Portia Women Brown Heels",
+    "gender": "Women",
+    "slug": "portia-women-brown-heels",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Portia Women Brown Heels.",
+    "price": "751.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/5bca367c155dd8ff995cd8b3d345ba4a_images.jpg",
+    "category": 19,
+    "stock": 27,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.016Z",
+    "updated_at": "2026-06-02T14:32:38.016Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 585,
+  "fields": {
+    "name": "Catwalk Women Multi Colour Flats",
+    "gender": "Women",
+    "slug": "catwalk-women-multi-colour-flats",
+    "description": "Heels pour Women. Couleur : Multi. Style : Casual. Catwalk Women Multi Colour Flats.",
+    "price": "532.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/8cb2555ca0cb804a80576369d26d6031_images.jpg",
+    "category": 19,
+    "stock": 37,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.023Z",
+    "updated_at": "2026-06-02T14:32:38.023Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 586,
+  "fields": {
+    "name": "Enroute Women Casual Black Flats",
+    "gender": "Women",
+    "slug": "enroute-women-casual-black-flats-1",
+    "description": "Heels pour Women. Couleur : Black. Style : Casual. Enroute Women Casual Black Flats.",
+    "price": "883.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/bdbebe341830b60f18a4464dadc45e30_images.jpg",
+    "category": 19,
+    "stock": 6,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.032Z",
+    "updated_at": "2026-06-02T14:32:38.032Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 587,
+  "fields": {
+    "name": "Catwalk Women Gold Heels",
+    "gender": "Women",
+    "slug": "catwalk-women-gold-heels",
+    "description": "Heels pour Women. Couleur : Gold. Style : Casual. Catwalk Women Gold Heels.",
+    "price": "1144.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Catwalk-Women-Gold-Heels_b2ca0800dabb479e7b51cd4921bda724_images.jpg",
+    "category": 19,
+    "stock": 3,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.041Z",
+    "updated_at": "2026-06-02T14:32:38.041Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 588,
+  "fields": {
+    "name": "Catwalk Women Gold Flats",
+    "gender": "Women",
+    "slug": "catwalk-women-gold-flats",
+    "description": "Heels pour Women. Couleur : Gold. Style : Casual. Catwalk Women Gold Flats.",
+    "price": "524.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/ca819fc95ae22193255179d3af2981ba_images.jpg",
+    "category": 19,
+    "stock": 24,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.051Z",
+    "updated_at": "2026-06-02T14:32:38.051Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 589,
+  "fields": {
+    "name": "Carlton London Women Black Heels",
+    "gender": "Women",
+    "slug": "carlton-london-women-black-heels",
+    "description": "Heels pour Women. Couleur : Black. Style : Casual. Carlton London Women Black Heels.",
+    "price": "1124.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Carlton-London-Women-Black-Sandals_820c53e936db176f74c91934004351ab_images.jpg",
+    "category": 19,
+    "stock": 2,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.060Z",
+    "updated_at": "2026-06-02T14:32:38.060Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 590,
+  "fields": {
+    "name": "Catwalk Women Buckel Pink Flats",
+    "gender": "Women",
+    "slug": "catwalk-women-buckel-pink-flats",
+    "description": "Heels pour Women. Couleur : Pink. Style : Casual. Catwalk Women Buckel Pink Flats.",
+    "price": "1142.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/99aec11d34cfacfdedf25c73a90bcf9c_images.jpg",
+    "category": 19,
+    "stock": 31,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.069Z",
+    "updated_at": "2026-06-02T14:32:38.069Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 591,
+  "fields": {
+    "name": "Catwalk Women Slim Casual Beige Wedges",
+    "gender": "Women",
+    "slug": "catwalk-women-slim-casual-beige-wedges",
+    "description": "Heels pour Women. Couleur : Blue. Style : Casual. Catwalk Women Slim Casual Beige Wedges.",
+    "price": "926.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/e40d51ebe4f7acdddf51a52d1d1c9d36_images.jpg",
+    "category": 19,
+    "stock": 3,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.076Z",
+    "updated_at": "2026-06-02T14:32:38.076Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 592,
+  "fields": {
+    "name": "Catwalk Women Black Flats",
+    "gender": "Women",
+    "slug": "catwalk-women-black-flats",
+    "description": "Heels pour Women. Couleur : Black. Style : Casual. Catwalk Women Black Flats.",
+    "price": "513.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/Catwalk-Women-Black-Sandals_bf5464138d32b2f25aeab5ffc8ce911e_images.jpg",
+    "category": 19,
+    "stock": 31,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.084Z",
+    "updated_at": "2026-06-02T14:32:38.084Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 593,
+  "fields": {
+    "name": "Inc 5 Women Casual Gold Flats",
+    "gender": "Women",
+    "slug": "inc-5-women-casual-gold-flats",
+    "description": "Heels pour Women. Couleur : Gold. Style : Casual. Inc 5 Women Casual Gold Flats.",
+    "price": "564.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/9d70af39b13503d1ae27c581dc5e711d_images.jpg",
+    "category": 19,
+    "stock": 4,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.091Z",
+    "updated_at": "2026-06-02T14:32:38.091Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 594,
+  "fields": {
+    "name": "Enroute Women Casual Taupe Casual Heels",
+    "gender": "Women",
+    "slug": "enroute-women-casual-taupe-casual-heels",
+    "description": "Heels pour Women. Couleur : Taupe. Style : Casual. Enroute Women Casual Taupe Casual Heels.",
+    "price": "750.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/4cc0bb7fe95fc7f26cb44505c85a91a3_images.jpg",
+    "category": 19,
+    "stock": 16,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.099Z",
+    "updated_at": "2026-06-02T14:32:38.100Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 595,
+  "fields": {
+    "name": "Catwalk Women Brown Heels",
+    "gender": "Women",
+    "slug": "catwalk-women-brown-heels-1",
+    "description": "Heels pour Women. Couleur : Brown. Style : Casual. Catwalk Women Brown Heels.",
+    "price": "1009.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/b68b16688c3b65b0b656998b57c129ee_images.jpg",
+    "category": 19,
+    "stock": 20,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.107Z",
+    "updated_at": "2026-06-02T14:32:38.107Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 596,
+  "fields": {
+    "name": "Inc. 5 Women Casual Beige Heels",
+    "gender": "Women",
+    "slug": "inc-5-women-casual-beige-heels",
+    "description": "Heels pour Women. Couleur : Beige. Style : Casual. Inc. 5 Women Casual Beige Heels.",
+    "price": "737.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/068814d4601476ad9c74701a23ec8df0_images.jpg",
+    "category": 19,
+    "stock": 14,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.116Z",
+    "updated_at": "2026-06-02T14:32:38.116Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 597,
+  "fields": {
+    "name": "Rocia Women Beige Sandals",
+    "gender": "Women",
+    "slug": "rocia-women-beige-sandals",
+    "description": "Heels pour Women. Couleur : Beige. Style : Casual. Rocia Women Beige Sandals.",
+    "price": "781.00",
+    "image": "",
+    "image_url": "http://assets.myntassets.com/v1/images/style/properties/bb5014984faaf2938d1437ca0b60bd73_images.jpg",
+    "category": 19,
+    "stock": 0,
+    "available": true,
+    "created_at": "2026-06-02T14:32:38.123Z",
+    "updated_at": "2026-06-02T14:32:38.123Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "testclient"
+    ],
+    "created_at": "2026-06-02T12:48:09.371Z",
+    "updated_at": "2026-06-02T12:48:09.371Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "anas.ait.ali.04@gmail.com"
+    ],
+    "created_at": "2026-06-02T12:49:35.287Z",
+    "updated_at": "2026-06-02T12:49:35.287Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "created_at": "2026-06-02T14:43:31.213Z",
+    "updated_at": "2026-06-02T14:43:31.213Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "testclient"
+    ],
+    "full_name": "Test User",
+    "address": "1 rue X",
+    "city": "Casa",
+    "postal_code": "20000",
+    "phone": "0600000000",
+    "status": "pending",
+    "created_at": "2026-06-02T12:48:09.439Z",
+    "updated_at": "2026-06-02T12:48:09.439Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "anas.ait.ali.04@gmail.com"
+    ],
+    "full_name": "Anas AIT ALI",
+    "address": "rfjz",
+    "city": "edgjel",
+    "postal_code": "66544",
+    "phone": "635195646",
+    "status": "pending",
+    "created_at": "2026-06-02T14:11:08.542Z",
+    "updated_at": "2026-06-02T14:11:08.542Z"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "product": null,
+    "product_name": "Clé USB 128 Go",
+    "price": "149.00",
+    "quantity": 2
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "product": null,
+    "product_name": "Quechua Men Arpenaz Brown Sandal",
+    "price": "216.00",
+    "quantity": 1
+  }
+}
+]
